@@ -1,0 +1,13 @@
+.Form-LabelEmailFrom_toggle ,.Form-LabelTextArea_toggle{
+    transition: 0.4s;
+    top: -15px;
+}
+.Form-TextArea_toggle, .Form-InputEmailFrom_toggle{
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid white;
+}
+
+.Form-InputEmailFrom:focus, .Form-TextArea{
+    outline: none;
+}

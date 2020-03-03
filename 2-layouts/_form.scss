@@ -1,0 +1,41 @@
+.Form{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    &-Input{
+        position: relative;
+    
+    } 
+    &-TextArea{
+        resize: none;
+        width: 200px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    &-InputEmailFrom, &-InputEmailTo, &-TextArea{
+        transition: 0.4s;
+        border: 1px solid black;
+    }
+    &-LabelEmailFrom, &-LabelEmailTo, &-LabelTextArea{
+        transition: 0.4s;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+    &-Btn{
+        border: 1px solid black;
+        background-color: rgba($color: #ffffff, $alpha: 1.0);
+        padding: 5px 30px 5px 30px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+

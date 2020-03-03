@@ -1,0 +1,13 @@
+:root{
+      font-size: 10px;  
+      font-family: 'Dosis', sans-serif;
+      font-weight: 400;
+      color: black;
+      $allBoxesAndLinksBackground: #fff;
+      $opacityAllBoxes: 0.84;
+}
+body{
+    background-color: rgba($color: #cccccc, $alpha: 0.0);
+    margin: 0;
+    padding: 0;
+}

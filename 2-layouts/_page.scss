@@ -1,0 +1,23 @@
+.Page{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    perspective-origin: center;
+    perspective: 110px;
+}
+.Page1{
+    height: 100vh;
+    
+    
+}
+.Page2{
+    margin-bottom: 150px;
+}
+.Page3{
+    height: 80vh;
+    justify-content: space-around;
+}
