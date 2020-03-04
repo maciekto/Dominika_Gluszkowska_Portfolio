@@ -1,116 +1,320 @@
+/* Animation Values */
+$scaleXValueStart: 1;
+$scaleYValueStart: 1;
+
+$scaleXValueEnd: 1.2;
+$scaleYValueEnd: 1.2;
+
+$animationProjectDuration: 0.2s;
+$animationType: ease-in-out;
+
+// Projects transform values 
+
+$project1TranslateZ: -80px;
+$project1RotateY: 10deg;
+
+$project2RotateY: -10deg;
+
+$project3RotateY: 20deg;
+
+$project4TranslateZ: -10px;
+$project4RotateY: -10deg;
+
+$project5RotateY: 10deg;
+
+$project6TranslateZ: -20px;
+$project6RotateY: -10deg;
+
+$project7RotateX: 10deg;
+$project7RotateY: 5deg;
+$project7RotateZ: -25deg;
+
+$project8RotateY: 10deg;
+$project8RotateZ: -10deg;
+
+$project9RotateY: -10deg;
+$project9RotateZ: 5deg;
+
+$project10RotateY: 10deg;
+$project10TranslateZ: -5px; 
+
 .ProjectMain{
-    z-index: 0;
+
     transition: 0.4s;
     background-color: white;
     border: 1px solid black;
     position: absolute;
     transform-style: preserve-3d;
     transform-origin: center;
+    cursor: pointer;
+    backface-visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-Back{
+        font-size: 0.4rem;
+        transition: inherit;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotateY(180deg);
+        &:hover{
+            transition: $animationProjectDuration;
+        }
+    }
     &1{
-        z-index: 2;
+        z-index: 50;
         background: url("beforeXD/art1.jpg") center center no-repeat;
         background-size: cover;
         width: 300px;
         height: 320px;
-        top: -375px;
+        top: -475px;
         left: -160px;
-        
-        transform: rotateZ(0deg) translateZ(-80px) rotateY(10deg) rotateX(0deg);
+        transform:translateZ($project1TranslateZ) rotateY($project1RotateY);
         box-shadow: -3px 3px 3px  black;
+        
+        // &:hover{
+        //     animation: shakeProject1 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:translateZ($project1TranslateZ) rotateY($project1RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        // }
+        // @keyframes shakeProject1{
+        //     from{
+        //         transform:translateZ($project1TranslateZ) rotateY($project1RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:translateZ($project1TranslateZ) rotateY($project1RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
     }
     &2{
+        z-index: 50;
         backface-visibility: visible;
         background: url("beforeXD/art2.jpg") center center no-repeat;
         background-size: cover;
-        width: 100px;
-        height: 120px;
-        top: 15%;
-        left: 76%;
+        width: 60px;
+        height: 90px;
+        top: 12%;
+        right: 4%;
         
         box-shadow: 3px 3px 3px  black;    
-        transform: rotateZ(10deg) translateZ(0px) rotateX(0deg) rotateY(-10deg);
-    }
+        transform:rotateY($project2RotateY);
 
+        // &:hover{
+        //     animation: shakeProject2 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateY($project2RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject2{
+        //     from{
+        //         transform:rotateY($project2RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateY($project2RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
+    }
     &3{
+        z-index: 48;
         background: url("beforeXD/art3.jpg") center center no-repeat;
         background-size: cover;
         width: 100px;
         height: 130px;
-        top: 35%;
+        top: 30%;
         left: 13%;
-        transform: rotateZ(-10deg) rotateX(0deg) rotateY(20deg) ;
+        transform:rotateY($project3RotateY);
         box-shadow: -3px 3px 3px  black;
+
+        // &:hover{
+        //     animation: shakeProject3 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateY($project3RotateY)  scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject3{
+        //     from{
+        //         transform:rotateY($project3RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateY($project3RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
     }
     &4{
+        z-index: 46;
         background: url("beforeXD/art4.png") center center no-repeat;
         background-size: cover;
         width: 150px;
         height: 120px;
         top: 62%;
-        left: 70%;
+        right: 10%;
         box-shadow: 3px 3px 3px  black;
-        transform: rotateZ(0deg) rotateY(-20deg) translateZ(10px);
+        transform: rotateY($project4RotateY) translateZ($project4TranslateZ);
+
+        // &:hover{
+        //     animation: shakeProject4 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateY($project4RotateY) translateZ($project4TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject4{
+        //     from{
+        //         transform:rotateY($project4RotateY) translateZ($project4TranslateZ) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateY($project4RotateY) translateZ($project4TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
     }
     &5{
+        z-index: 44;
         background: url("beforeXD/art5.jpg") center center no-repeat;
         background-size: cover;
         width: 150px;
         height: 120px;
         top: -25%;
-        left: 13%;
+        left: 10%;
         box-shadow: -3px 3px 3px  black;
-        transform: rotateZ(0deg) rotateY(10deg) rotateX(0deg) translateZ(0px);
-    }
+        transform: rotateY($project5RotateY);
 
+        // &:hover{
+        //     animation: shakeProject5 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateY($project5RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject5{
+        //     from{
+        //         transform:rotateY($project5RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateY($project5RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
+    }
     &6{
+        z-index: 44;
         background: url("beforeXD/art6.jpg") center center no-repeat;
         background-size: cover;
-        width: 175px;
-        height: 140px;
-        top: 0%;
-        left: 75%;
+        width: 125px;
+        height: 100px;
+        top: -10%;
+        right: 5%;
         box-shadow: 3px 3px 3px black;
-        transform: rotateZ(0deg) rotateY(-10deg) rotateX(0deg) translateZ(-40px);
-    }
+        transform:rotateY($project6RotateY) translateZ($project6TranslateZ);
 
+        // &:hover{
+        //     animation: shakeProject6 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateY($project6RotateY) translateZ($project6TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject6{
+        //     from{
+        //         transform:rotateY($project6RotateY) translateZ($project6TranslateZ) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateY($project6RotateY) translateZ($project6TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
+    }
     &7{
+        z-index: 42;
         background: url("beforeXD/art7.jpg") center center no-repeat;
         background-size: cover;
         width: 175px;
         height: 140px;
-        top: 60%;
-        left: 30%;
+        top: 70%;
+        right: 25%;
         box-shadow: -3px 3px 3px black;
-        transform: rotateZ(-25deg) rotateX(10deg) rotateY(5deg) translateZ(-2px);
+        transform: rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY);
+
+        // &:hover{
+        //     animation: shakeProject7 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject7{
+        //     from{
+        //         transform:rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
     }
     &8{
+        z-index: 41;
         background: url("beforeXD/art8.jpg") center center no-repeat;
         background-size: cover;
         width: 100px;
-        height: 200px;
-        top: 0%;
+        height: 150px;
+        top: -10%;
         left: 10%;
         box-shadow: -3px 3px 3px black;
-        transform: rotateZ(5deg) rotateX(0deg) rotateY(10deg) translateZ(0px);
+        transform: rotateZ($project8RotateZ)rotateY($project8RotateY);
+
+        // &:hover{
+        //     animation: shakeProject8 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateZ($project8RotateZ)rotateY($project8RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject8{
+        //     from{
+        //         transform:rotateZ($project8RotateZ)rotateY($project8RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateZ($project8RotateZ)rotateY($project8RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
     }
     &9{
+        z-index: 41;
         background: url("beforeXD/art9.jpg") center center no-repeat;
         background-size: cover;
-        width: 200px;
-        height: 200px;
-        top: 40%;
-        left: 60%;
+        width: 120px;
+        height: 120px;
+        top: 58%;
+        right: 10%;
         box-shadow: 3px 3px 3px black;
-        transform: rotateZ(5deg) rotateX(0deg) rotateY(-10deg) translateZ(0px);
+        transform: rotateZ($project9RotateZ) rotateY($project9RotateY);
+
+        // &:hover{
+        //     animation: shakeProject9 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateZ($project9RotateZ) rotateY($project9RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject9{
+        //     from{
+        //         transform:rotateZ($project9RotateZ) rotateY($project9RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateZ($project9RotateZ) rotateY($project9RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
     }
     &10{
+        z-index: 41;
         background: url("beforeXD/art10.png") center center no-repeat;
         background-size: cover;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         top: 70%;
-        left: 10%;
-        box-shadow: 3px 3px 3px black;
-        transform: rotateZ(-10deg) rotateX(0deg) rotateY(10deg) translateZ(0px);
+        left: -5%;
+        box-shadow: -3px 3px 3px black;
+        transform:rotateY($project10RotateY) translateZ($project10TranslateZ);
+
+        // &:hover{
+        //     animation: shakeProject10 $animationProjectDuration $animationType;
+        //     animation-iteration-count: 1;
+        //     transform:rotateY($project10RotateY) translateZ($project10TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+            
+        // }
+        // @keyframes shakeProject10{
+        //     from{
+        //         transform:rotateY($project10RotateY) translateZ($project10TranslateZ) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
+        //     }to{
+        //         transform:rotateY($project10RotateY) translateZ($project10TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
+        //     }
+        // }
     }
 }
+

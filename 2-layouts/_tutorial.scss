@@ -1,8 +1,11 @@
 
 .Tutorial{
     display: none;
-    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 53;
     width: 100vw;
     height: 100vh;
-    background-color: rgba($color: #ffffff, $alpha: 0.84);
+    background-color: rgba($color: #c0c0c0, $alpha: 0.84);
 }

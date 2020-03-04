@@ -1,0 +1,59 @@
+$transitionSpeed: 0.5s;
+
+.NavBar{
+    transition: $transitionSpeed;
+    background-color: rgba($color: #ffffff, $alpha: 0.84);
+    width: 90px;
+    height: 90px;
+    border: 0px solid black;
+    z-index: 51;
+    position: fixed;
+    box-shadow: 0px 0px 6px;
+    transform: rotateZ(45deg);
+    top: 40vh;
+    right: -50px;
+    &-Inner{
+        width: inherit;
+        height: inherit;
+        position: relative;
+    }
+    &-Link{
+        position: absolute;
+    }
+    &-About{
+        left: 7px;
+        bottom: 13px;
+        transform: rotateZ(-45deg);
+    }
+    &-Projects{
+        right: 7px;
+        bottom: 16px;
+        transform: rotateZ(-135deg);
+    }
+    &-Offer{
+        top: 13px;
+        right: 9px;
+        transform: rotateZ(-225deg);
+    }
+    &-Contact{
+        top: 17px;
+        left: 7px;
+        transform: rotateZ(45deg);
+    }
+}
+.NavBar_AboutClick{
+    transition: $transitionSpeed;
+    transform: rotateZ(45deg);
+}
+.NavBar_ProjectClick{
+    transition: $transitionSpeed;
+    transform: rotateZ(135deg);
+}
+.NavBar_OfferClick{
+    transition: $transitionSpeed;
+    transform: rotateZ(225deg);
+}
+.NavBar_ContactClick{
+    transition: $transitionSpeed;
+    transform: rotateZ(315deg);
+}
