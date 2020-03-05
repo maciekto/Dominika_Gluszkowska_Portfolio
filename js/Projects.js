@@ -27,17 +27,29 @@ function preview2(){
 }
 function preview3(){
     removeClasses();
-    Projects[2].classList.add('ProjectMain_clicked_left');
-    Projects[2].addEventListener('click', preview3Back, false);
+    Projects[2].classList.toggle('ProjectMain_clicked_left');
+    Projects[2].addEventListener('click', preview3Back);
     
     function preview3Back(){
-        Projects[2].classList.add('ProjectMain_back');
-        Back3.classList.add('ProjectMain3-Back_visible');
+        Projects[2].classList.toggle('ProjectMain_back');
+        Back3.classList.toggle('ProjectMain3-Back_visible');
         Projects[2].addEventListener('click', remove3); 
         function remove3(){
+            //toggleMultiple(Projects[2],0, 'ProjectMain_back', 'ProjectMain_clicked_left');
             Projects[2].classList.remove('ProjectMain_back');
-            Back3.classList.remove('ProjectMain3-Back_visible');
-            Projects[2].classList.remove('ProjectMain_clicked_left');
+            Projects[2].classList.toggle('ProjectMain_clicked_left');
+            /*function toggleMultiple(element,element2, class1, class2){
+                console.log('WYKONANO');
+                setTimeout(() => {
+                    console.log('Timeout1');
+                    element.classList.toggle(class1);
+                }, 5000);
+                setTimeout(() => {
+                    console.log('Timeout2');
+                    element.classList.toggle(class2);
+                }, 10000);
+                
+            }*/
             
         };
     }
