@@ -48,14 +48,31 @@ a, a:visited, a:focus, a:active {
 }
 
 .Tutorial {
-  display: none;
+  -webkit-perspective: 110px;
+          perspective: 110px;
+  -webkit-perspective-origin: center;
+          perspective-origin: center;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 0;
   top: 0;
-  z-index: 53;
+  z-index: 52;
   width: 100vw;
   height: 100vh;
   background-color: rgba(192, 192, 192, 0.84);
+}
+
+.ProjectMain-Tutorial {
+  z-index: 54;
 }
 
 .Page {

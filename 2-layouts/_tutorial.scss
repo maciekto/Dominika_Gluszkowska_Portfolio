@@ -1,11 +1,19 @@
 
 .Tutorial{
-    display: none;
+    perspective: 110px;
+    perspective-origin: center;
+    font-size: 3rem;
+    display: flex;
     position: fixed;
+    align-items: flex-start;
+    justify-content: center;
     left: 0;
     top: 0;
-    z-index: 53;
+    z-index: 52;
     width: 100vw;
     height: 100vh;
     background-color: rgba($color: #c0c0c0, $alpha: 0.84);
+}
+.ProjectMain-Tutorial{
+    z-index: 54;
 }
