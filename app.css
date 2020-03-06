@@ -87,7 +87,7 @@ a, a:visited, a:focus, a:active {
 
 .Page2 {
   z-index: 1;
-  height: 60vh;
+  height: 75vh;
   margin-bottom: 150px;
 }
 
@@ -346,8 +346,9 @@ h4 {
 
 /* Animation Values */
 .ProjectMain {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   background-color: white;
   border: 1px solid black;
   position: absolute;
@@ -515,7 +516,7 @@ h4 {
 }
 
 .ProjectMain9 {
-  z-index: 41;
+  z-index: 40;
   background: url("beforeXD/art9.jpg") center center no-repeat;
   background-size: cover;
   width: 120px;
@@ -529,7 +530,7 @@ h4 {
 }
 
 .ProjectMain10 {
-  z-index: 41;
+  z-index: 40;
   background: url("beforeXD/art10.png") center center no-repeat;
   background-size: cover;
   width: 150px;
@@ -674,59 +675,20 @@ h4 {
 }
 
 .ProjectMain_back {
-  -webkit-transform: rotateY(180deg) scaleX(0.8) scaleY(0.8) rotateX(0deg);
-          transform: rotateY(180deg) scaleX(0.8) scaleY(0.8) rotateX(0deg);
-  -webkit-animation: scaleDownUp 1.5s ease-in-out 1;
-          animation: scaleDownUp 1.5s ease-in-out 1;
+  -webkit-transform: rotateY(180deg) scaleX(0.8) scaleY(0.8);
+          transform: rotateY(180deg) scaleX(0.8) scaleY(0.8);
 }
 
-@-webkit-keyframes scaleDownUp {
-  0% {
-    -webkit-transform: scaleX(0.8) scaleY(0.8) rotateY(0deg) translateX(0px);
-            transform: scaleX(0.8) scaleY(0.8) rotateY(0deg) translateX(0px);
-  }
-  33% {
-    -webkit-transform: scaleX(1) scaleY(0.8) rotateY(90deg) translateX(350px);
-            transform: scaleX(1) scaleY(0.8) rotateY(90deg) translateX(350px);
-  }
-  66% {
-    -webkit-transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) translateX(0px);
-            transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) translateX(0px);
-  }
-  100% {
-    -webkit-transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) rotateX(0deg) translateX(0px);
-            transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) rotateX(0deg) translateX(0px);
-  }
-}
-
-@keyframes scaleDownUp {
-  0% {
-    -webkit-transform: scaleX(0.8) scaleY(0.8) rotateY(0deg) translateX(0px);
-            transform: scaleX(0.8) scaleY(0.8) rotateY(0deg) translateX(0px);
-  }
-  33% {
-    -webkit-transform: scaleX(1) scaleY(0.8) rotateY(90deg) translateX(350px);
-            transform: scaleX(1) scaleY(0.8) rotateY(90deg) translateX(350px);
-  }
-  66% {
-    -webkit-transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) translateX(0px);
-            transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) translateX(0px);
-  }
-  100% {
-    -webkit-transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) rotateX(0deg) translateX(0px);
-            transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) rotateX(0deg) translateX(0px);
-  }
-}
-
-.ProjectMain3-Back_visible {
+.ProjectMain-Back_visible {
   background-color: rgba(255, 255, 255, 0.84);
   border: 1px solid black;
-  width: 30vw;
-  height: 18vh;
+  padding: 10px;
+  width: 34vw;
+  height: 22vh;
   -webkit-transition: 0s;
   transition: 0s;
-  -webkit-transform: translateZ(-50px) rotateY(180deg) translateY(10px);
-          transform: translateZ(-50px) rotateY(180deg) translateY(10px);
+  -webkit-transform: translateZ(-30px) rotateY(180deg) translateY(10px);
+          transform: translateZ(-30px) rotateY(180deg) translateY(10px);
   font-size: 1rem;
   -webkit-box-shadow: 0px 0px 4px black;
           box-shadow: 0px 0px 4px black;

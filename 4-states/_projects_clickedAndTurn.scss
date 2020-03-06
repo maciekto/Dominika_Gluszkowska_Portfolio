@@ -21,27 +21,16 @@
     box-shadow: 0px 0px 10px black;
 }
 .ProjectMain_back{
-    transform: rotateY(180deg) scaleX(0.8) scaleY(0.8) rotateX(0deg);
-    animation: scaleDownUp 1.5s ease-in-out 1;
-    @keyframes scaleDownUp {
-        0%{
-          transform: scaleX(0.8) scaleY(0.8) rotateY(0deg) translateX(0px);  
-        }33%{
-            transform: scaleX(1) scaleY(0.8) rotateY(90deg) translateX(350px); 
-        }66%{
-            transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) translateX(0px);
-        }100%{
-            transform: scaleX(0.8) scaleY(0.8) rotateY(180deg) rotateX(0deg) translateX(0px) ;
-        }
-    }
+    transform: rotateY(180deg) scaleX(0.8) scaleY(0.8);
 }
-.ProjectMain3-Back_visible{
+.ProjectMain-Back_visible{
     background-color: rgba($color: #ffffff, $alpha: 0.84);
     border: 1px solid black;
-    width: 30vw;
-    height: 18vh;
+    padding: 10px;
+    width: 34vw;
+    height: 22vh;
     transition: 0s;
-    transform: translateZ(-50px) rotateY(180deg) translateY(10px);
+    transform: translateZ(-30px) rotateY(180deg) translateY(10px);
     font-size: 1rem;
     box-shadow: 0px 0px 4px black;
 }
