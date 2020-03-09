@@ -1,8 +1,27 @@
 .Wrapper{
     width: 100vw;
     height: 100%;
+   
     &-Inner{
         width: inherit;
         height: inherit;
+        display: flex;
+        flex-direction: column;
     }
+}
+@media (min-width: 1024px) and (min-height: 701px){
+    .Wrapper{
+       
+      
+        width: 300vw;
+        height: 100vh;
+        transform: rotate(-90deg);
+      
+        &-Inner{
+            
+            transform: rotate(90deg);
+          
+            flex-direction: row;
+        }
+    }   
 }

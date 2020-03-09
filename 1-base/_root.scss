@@ -5,7 +5,7 @@
       color: black;
       $allBoxesAndLinksBackground: #fff;
       $opacityAllBoxes: 0.84;
-      overflow-x: hidden;
+     overflow-x: hidden;
       scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
@@ -31,5 +31,13 @@ a, a:visited, a:focus, a:active{
 @media only screen and (max-width: 360px){
     :root{
         font-size: 6px;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 701px){
+    :root{
+        
+        overflow-y: hidden;
+        overflow-x: visible;
     }
 }

@@ -319,4 +319,8 @@ $project10TranslateZ: -5px;
         // }
     }
 }
-
+@media (min-width: 1024px) and (min-height: 701px){
+    .ProjectMain{
+        display: none;
+    }
+}

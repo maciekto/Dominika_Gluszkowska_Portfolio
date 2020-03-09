@@ -57,3 +57,8 @@ $transitionSpeed: 0.5s;
     transition: $transitionSpeed;
     transform: rotateZ(315deg);
 }
+@media (min-width: 1024px) and (min-height: 701px){
+    .NavBar{
+        display: none;
+    }
+}
