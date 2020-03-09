@@ -18,7 +18,7 @@
     <div class="Wrapper">
         <div class="Wrapper-Inner">
 <!-- Tutorial -->
-            <div class="Tutorial">
+            <div class="Tutorial"> 
                 <div class="Tutorial-Message">
                     <div class="Tutorial-Arrow">
                         <svg class="Tutorial-Arrow1"  xmlns="http://www.w3.org/2000/svg" width="40.808" height="35.013" viewBox="0 0 40.808 35.013">
@@ -212,14 +212,14 @@
                             </div>
                             
             <!-- Input 2 -->
-                            <div class="Form-Input">
-                                <input type="email" name="EmailTo" class="Form-InputEmailFrom">
-                                <label class="Form-LabelEmailFrom">Your email:</label>
+                            <div class="Form-Input Email-Input">
+                                <input type="email" name="EmailTo" id="email" class="Form-InputEmailFrom">
+                                <label class="Form-LabelEmailFrom" for="email">Your email:</label>
                             </div>
             <!-- Input 3 -->
-                            <div class="Form-Input">
-                                <textarea name="Message" class="Form-TextArea" cols="30" rows="6"></textarea>
-                                <label class="Form-LabelTextArea">Write some</label>
+                            <div class="Form-Input TextArea-Input">
+                                <textarea name="Message" class="Form-TextArea" id="TextArea" cols="30" rows="6" maxlength="250"></textarea>
+                                <label class="Form-LabelTextArea" for="TextArea">Write some</label>
                             </div>
 
                             <div class="Form-Input">
@@ -236,7 +236,7 @@
                         Social Media
                     </h4>
                     <ul class="SocialMedia-IconList IconList">
-                        <li class="IconList-FB"> <img src="beforeXD/fb.png" alt="" width="30" height="30"> </li>
+                        <li class="IconList-FB"><a href="https://www.facebook.com/domi.gluszkowska" target="_blank"> <img src="beforeXD/fb.png" alt="" width="30" height="30"></a> </li>
                     </ul>
                 </nav>
 
@@ -278,6 +278,6 @@
 
     <script src="js/Projects.js"> </script>
     <script src="js/NavBar.js"> </script>
-   
+    <script src="js/FormInputs.js"> </script>
 </body>
 </html>

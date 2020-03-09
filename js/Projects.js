@@ -70,9 +70,6 @@ const Back8 = document.querySelector('.ProjectMain8-Back');
 const Back9 = document.querySelector('.ProjectMain9-Back');
 const Back10 = document.querySelector('.ProjectMain10-Back');
 
-console.log(Projects);
-
-
 Projects[0].addEventListener('click', preview1);
 Projects[1].addEventListener('click', preview2);
 Projects[2].addEventListener('click', preview3);

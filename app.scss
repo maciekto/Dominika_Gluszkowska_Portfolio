@@ -3,3 +3,26 @@
 @import '2-layouts/_layouts-dir';
 @import '3-modules/_modules-dir';
 @import '4-states/_states-dir';
+
+
+@media only screen and (max-height: 550px){
+    .BoxLink2{
+        display: none;
+    }
+}
+@media only screen and (max-height: 700px){
+    .ProjectMain{
+        &1{
+            display: none;
+        }
+        &5{
+            display: none;
+        }
+        &6{
+            display: none;
+        }
+        &8{
+            display: none;
+        }
+    }
+}
