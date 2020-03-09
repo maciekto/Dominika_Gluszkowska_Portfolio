@@ -48,11 +48,13 @@ a, a:visited, a:focus, a:active {
 }
 
 .Tutorial {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-perspective: 110px;
           perspective: 110px;
   -webkit-perspective-origin: center;
           perspective-origin: center;
-  font-size: 3rem;
+  font-size: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,8 +73,123 @@ a, a:visited, a:focus, a:active {
   background-color: rgba(192, 192, 192, 0.84);
 }
 
-.ProjectMain-Tutorial {
-  z-index: 54;
+.Tutorial-Message {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform: translateY(15vh) translateX(-10vw);
+          transform: translateY(15vh) translateX(-10vw);
+}
+
+.Tutorial-Arrow {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: black;
+  -webkit-transform: rotateY(180deg) translateY(20px) translateX(10px);
+          transform: rotateY(180deg) translateY(20px) translateX(10px);
+}
+
+.Tutorial-Title {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ProjectMainTutorial {
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  cursor: pointer;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("beforeXD/art3.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 130px;
+  top: 30%;
+  left: 13%;
+  -webkit-transform: rotateY(20deg);
+          transform: rotateY(20deg);
+  -webkit-box-shadow: -3px 3px 3px  black;
+          box-shadow: -3px 3px 3px  black;
+}
+
+.ProjectMainTutorial-Back {
+  font-size: 0.4rem;
+  -webkit-transition: inherit;
+  transition: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.Tutorial-Message_Move1 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(75vh) translateX(10vw);
+          transform: translateY(75vh) translateX(10vw);
+}
+
+.Tutorial-Message_Move2 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(5vh) translateX(20vw);
+          transform: translateY(5vh) translateX(20vw);
+}
+
+.Tutorial-Message_Move3 {
+  opacity: 0;
+}
+
+.Tutorial-Arrow_Move1 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotateY(180deg) rotateX(180deg) translateY(20px) translateX(10px);
+          transform: rotateY(180deg) rotateX(180deg) translateY(20px) translateX(10px);
+}
+
+.ProjectMainTutorial_opacity_0 {
+  opacity: 0;
 }
 
 .Page {

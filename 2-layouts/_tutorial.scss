@@ -1,8 +1,9 @@
 
 .Tutorial{
+    transition: 0.4s;
     perspective: 110px;
     perspective-origin: center;
-    font-size: 3rem;
+    font-size: 1.8rem;
     display: flex;
     position: fixed;
     align-items: flex-start;
@@ -13,7 +14,70 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba($color: #c0c0c0, $alpha: 0.84);
+    &-Message{
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateY(15vh) translateX(-10vw);
+    }
+    &-Arrow{
+        transition: 0.4s;
+        color: black;
+        transform: rotateY(180deg) translateY(20px) translateX(10px);
+    }
+    &-Title{
+        transition: 0.4s;
+    }
 }
-.ProjectMain-Tutorial{
-    z-index: 54;
+.ProjectMainTutorial{
+    position: relative;
+    transition: 0.6s;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    cursor: pointer;
+    backface-visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("beforeXD/art3.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 130px;
+    top: 30%;
+    left: 13%;
+    transform:rotateY(20deg);
+    box-shadow: -3px 3px 3px  black;
+    &-Back{
+        font-size: 0.4rem;
+        transition: inherit;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotateY(180deg);
+    }
+}
+.Tutorial-Message_Move1{
+    transition: 0.4s;
+   transform: translateY(75vh) translateX(10vw);
+}
+.Tutorial-Message_Move2{
+    transition: 0.4s;
+   transform: translateY(5vh) translateX(20vw);
+}
+.Tutorial-Message_Move3{
+    opacity: 0;
+}
+.Tutorial-Arrow_Move1{
+    transition: 0.4s;
+    transform: rotateY(180deg) rotateX(180deg) translateY(20px) translateX(10px);
+}
+.ProjectMainTutorial_opacity_0{
+    opacity: 0;
 }

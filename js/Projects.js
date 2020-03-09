@@ -1,6 +1,63 @@
+// TUTORIAL SCRIPTS 
+const TUTORIAL = document.querySelector('.ProjectMainTutorial');
+TUTORIAL.addEventListener('click', previewTutorial);
+
+const BackTutorial = document.querySelector('.ProjectMainTutorial-Back');
+const TutorialMainDiv = document.querySelector('.Tutorial');
+const TutorialMessage = document.querySelector('.Tutorial-Message');
+const TutorialArrow = document.querySelector('.Tutorial-Arrow');
+const TutorialTitle = document.querySelector('.Tutorial-Title');
+TutorialTitle.innerHTML = "Click on card to see project";
+
+function previewTutorial(){
+    
+    
+    TUTORIAL.removeEventListener('click', previewTutorial);
+    TutorialMessage.classList.toggle('Tutorial-Message_Move1');
+    TutorialArrow.classList.toggle('Tutorial-Arrow_Move1');
+    TutorialTitle.innerHTML = "Click second time to see the story";
+    
+    removeClasses();
+    this.classList.toggle('ProjectMain_clicked_left');
+    this.addEventListener('click', previewBackTutorial);
+}
+    function previewBackTutorial(){
+        TUTORIAL.removeEventListener('click', previewBackTutorial);
+        TutorialTitle.innerHTML = "One more time to exit";
+        TutorialArrow.classList.toggle('Tutorial-Arrow_Move1');
+        BackTutorial.classList.toggle('ProjectMain-Back_visible');
+        TutorialMessage.classList.toggle('Tutorial-Message_Move1');
+        TutorialMessage.classList.toggle('Tutorial-Message_Move2');
+
+        this.classList.toggle('ProjectMain_back');
+        
+
+        this.addEventListener('click', previewReturnTutorial);  
+    }
+        function previewReturnTutorial(){
+            TutorialMessage.classList.toggle('Tutorial-Message_Move2');
+            setTimeout(() => {
+                TutorialMessage.classList.toggle('Tutorial-Message_Move3');
+                TUTORIAL.classList.toggle('ProjectMainTutorial_opacity_0');
+                
+            }, 100);
+            setTimeout(() => {
+                TutorialMainDiv.classList.toggle('ProjectMainTutorial_opacity_0');
+            }, 700);
+            setTimeout(() => {
+                TutorialMainDiv.style.cssText = "display: none";
+            }, 800);
+            TUTORIAL.removeEventListener('click', previewReturnTutorial);
+            this.classList.toggle('ProjectMain_back');
+            this.classList.toggle('ProjectMain_clicked_left')
+            BackTutorial.classList.toggle('ProjectMain-Back_visible'); 
+        };
 
 //PROJECTS 
+
 const Projects = document.querySelectorAll('.ProjectMain');
+
+
 
 const Back1 = document.querySelector('.ProjectMain1-Back');
 const Back2 = document.querySelector('.ProjectMain2-Back');
@@ -13,7 +70,8 @@ const Back8 = document.querySelector('.ProjectMain8-Back');
 const Back9 = document.querySelector('.ProjectMain9-Back');
 const Back10 = document.querySelector('.ProjectMain10-Back');
 
-//console.log(Projects[2]);
+console.log(Projects);
+
 
 Projects[0].addEventListener('click', preview1);
 Projects[1].addEventListener('click', preview2);
@@ -25,6 +83,7 @@ Projects[6].addEventListener('click', preview7);
 Projects[7].addEventListener('click', preview8);
 Projects[8].addEventListener('click', preview9);
 Projects[9].addEventListener('click', preview10);
+
 
 
 

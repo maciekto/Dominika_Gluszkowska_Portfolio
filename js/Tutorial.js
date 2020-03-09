@@ -1,3 +1,4 @@
-const CARD = document.querySelector('.ProjectMain3');
+//const CARD = document.querySelector('.ProjectMain3');
 
-CARD.classList.add('ProjectMain-Tutorial');
+// CARD.classList.add('ProjectMain-Tutorial');
+
