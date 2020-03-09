@@ -13,7 +13,7 @@ const Back8 = document.querySelector('.ProjectMain8-Back');
 const Back9 = document.querySelector('.ProjectMain9-Back');
 const Back10 = document.querySelector('.ProjectMain10-Back');
 
-console.log(Projects[2]);
+//console.log(Projects[2]);
 
 Projects[0].addEventListener('click', preview1);
 Projects[1].addEventListener('click', preview2);
@@ -83,17 +83,15 @@ function preview2(){
 // PREVIEW 3
 // function for card/project preview
 function preview3(){
-
+    
     removeClasses();
     removeMainListener(3, preview3);
-    
     this.classList.toggle('ProjectMain_clicked_left');
     this.addEventListener('click', previewBack3);
 }
     // function for card/project preview BACK with description
     function previewBack3(){
         removeSecondListener(3, previewBack3);
-
         this.classList.toggle('ProjectMain_back');
         Back3.classList.toggle('ProjectMain-Back_visible');
 
@@ -102,7 +100,6 @@ function preview3(){
         // function for card/project preview back to normal position
         function previewReturn3(){
             removeThirdListener(3, previewReturn3);
-
             this.classList.toggle('ProjectMain_back');
             this.classList.toggle('ProjectMain_clicked_left')
             Back3.classList.toggle('ProjectMain-Back_visible');

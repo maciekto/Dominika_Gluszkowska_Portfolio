@@ -16,8 +16,10 @@
 }
 .Page2{
     z-index: 1;
-    height: 75vh;
+    height: 65vh;
     margin-bottom: 150px;
+    perspective-origin: 50% 60%;
+    
 }
 .Page3{
     z-index: 0;

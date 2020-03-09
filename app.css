@@ -104,8 +104,10 @@ a, a:visited, a:focus, a:active {
 
 .Page2 {
   z-index: 1;
-  height: 75vh;
+  height: 65vh;
   margin-bottom: 150px;
+  -webkit-perspective-origin: 50% 60%;
+          perspective-origin: 50% 60%;
 }
 
 .Page3 {
@@ -482,7 +484,7 @@ h4 {
   background-size: cover;
   width: 150px;
   height: 120px;
-  top: -25%;
+  top: -10%;
   left: 10%;
   -webkit-box-shadow: -3px 3px 3px  black;
           box-shadow: -3px 3px 3px  black;
@@ -496,7 +498,7 @@ h4 {
   background-size: cover;
   width: 125px;
   height: 100px;
-  top: -10%;
+  top: 5%;
   right: 5%;
   -webkit-box-shadow: 3px 3px 3px black;
           box-shadow: 3px 3px 3px black;
@@ -510,7 +512,7 @@ h4 {
   background-size: cover;
   width: 175px;
   height: 140px;
-  top: 70%;
+  top: 65%;
   right: 25%;
   -webkit-box-shadow: -3px 3px 3px black;
           box-shadow: -3px 3px 3px black;
@@ -547,12 +549,12 @@ h4 {
 }
 
 .ProjectMain10 {
-  z-index: 40;
+  z-index: 39;
   background: url("beforeXD/art10.png") center center no-repeat;
   background-size: cover;
   width: 150px;
   height: 150px;
-  top: 70%;
+  top: 80%;
   left: -5%;
   -webkit-box-shadow: -3px 3px 3px black;
           box-shadow: -3px 3px 3px black;
