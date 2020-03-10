@@ -9,18 +9,13 @@
         flex-direction: column;
     }
 }
-@media (min-width: 1024px) and (min-height: 701px){
+@media (min-width: 1024px){
     .Wrapper{
-       
-      
-        width: 300vw;
+        transition: 2s;
+        width: 100vw;
         height: 100vh;
-        transform: rotate(-90deg);
-      
         &-Inner{
-            
-            transform: rotate(90deg);
-          
+            width: 300vw;
             flex-direction: row;
         }
     }   

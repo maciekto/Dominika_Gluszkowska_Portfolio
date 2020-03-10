@@ -9,6 +9,7 @@
     text-align: center;
     margin-top: 0px;
     box-shadow: 0px 0px 5px black;
+    padding: 5px;
     &-One::before,&-One::after{
         content: '';
         margin: 21px;
@@ -47,4 +48,7 @@ h4{
 }
 .Title3{
     display: none;
+}
+@media (min-width: 1024px){
+    
 }

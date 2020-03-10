@@ -34,10 +34,10 @@ a, a:visited, a:focus, a:active{
     }
 }
 
-@media (min-width: 1024px) and (min-height: 701px){
+@media (min-width: 1024px){
     :root{
         
         overflow-y: hidden;
-        overflow-x: visible;
+        overflow-x: auto;
     }
 }

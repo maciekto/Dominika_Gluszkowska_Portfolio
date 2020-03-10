@@ -1,4 +1,16 @@
-window.onscroll = () => {
+
+
+window.onscroll = () =>{
+    let AboutDesktop = window.innerWidth*0.5;
+    let OfferDesktop = window.innerWidth*0.5;
+    let ContactDesktop = window.innerWidth*1.5;
+    if(window.scrollX < AboutDesktop){
+        AboutLinkDesktop();
+    }else if(window.scrollX > OfferDesktop && window.scrollX < ContactDesktop){
+        OfferLinkDesktop();
+    }else if(window.scrollX > ContactDesktop){
+        ContactLinkDesktop();
+    }
     let About = window.innerHeight/7;
     let Projects = window.innerHeight/6;
     let Offer = window.innerHeight/2;
@@ -12,9 +24,34 @@ window.onscroll = () => {
     }else if(window.scrollY > Contact){
         ContactLink();
     }
+
+
+    
 };
 
+const NavBarDesktop = document.querySelector('.NavBarDesktop');
 
+function AboutLinkDesktop(){
+    removeClassesNavBarLinksDesktop();
+    NavBarDesktop.classList.add('NavBarDesktop_AboutClick');
+}
+function OfferLinkDesktop(){
+    removeClassesNavBarLinksDesktop();
+    NavBarDesktop.classList.add('NavBarDesktop_OfferClick');
+}
+function ContactLinkDesktop(){
+    removeClassesNavBarLinksDesktop();
+    NavBarDesktop.classList.add('NavBarDesktop_ContactClick');
+}
+
+function removeClassesNavBarLinksDesktop(){
+    NavBarDesktop.classList.remove('NavBarDesktop_AboutClick');
+    NavBarDesktop.classList.remove('NavBarDesktop_OfferClick');
+    NavBarDesktop.classList.remove('NavBarDesktop_ContactClick');
+}
+//AboutLinkDesktop()
+//OfferLinkDesktop()
+//ContactLinkDesktop();
 const NavBar = document.querySelector('.NavBar');
 
 function AboutLink(){

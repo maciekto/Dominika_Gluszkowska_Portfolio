@@ -26,3 +26,11 @@
     height: 90vh;
     justify-content: space-around;
 }
+@media (min-width: 1024px){
+    .Page{
+        height: 100vh;
+    }
+    .Page2{
+        margin-bottom: 0px;
+    }
+}
