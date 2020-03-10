@@ -16,5 +16,5 @@ input:focus{
     outline: none;
 }
 input:disabled{
-    background-color: white;
+    background-color: rgba($color: #ffffff, $alpha: 0);
 }

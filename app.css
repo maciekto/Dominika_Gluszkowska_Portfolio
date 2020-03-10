@@ -63,10 +63,15 @@ a, a:visited, a:focus, a:active {
 
 @media (min-width: 1024px) {
   .Wrapper {
+    display: block;
     -webkit-transition: 2s;
     transition: 2s;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: white;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
   }
   .Wrapper-Inner {
     width: 300vw;
@@ -74,6 +79,19 @@ a, a:visited, a:focus, a:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    overflow-x: auto;
+  }
+  .Wrapper::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -526,6 +544,15 @@ h4 {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .Title-One {
+    display: none;
+  }
+  .Title-Two {
+    display: none;
+  }
+}
+
 /* Animation Values */
 .ProjectMain {
   position: relative;
@@ -929,7 +956,7 @@ input:focus {
 }
 
 input:disabled {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .ProjectMain_clicked_left {
