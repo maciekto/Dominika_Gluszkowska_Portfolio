@@ -84,7 +84,7 @@
         display: block;
         cursor: pointer;
         z-index: 60;
-        transition: 1s;
+        transition: 0.5s;
         width: 90px;
         height: 90px;
         background-color: rgba($color: #ffffff, $alpha: 0.84);
@@ -105,10 +105,27 @@
         }
     }
     .Box{
-        height: 10vh;
+        height: 17vh;
+        margin: 0;
+        &-Inner{
+            height: 17vh;
+        }
+        &-Description{
+            margin: 0;
+        }
+        &-Title{
+        }
     }
     .Contact{
         height: 350px;
+    }
+    .About{
+
+    }
+    .BoxLink{
+        padding: 5px;
+        height: 17vh;
+        justify-content: center;
     }
 }
 

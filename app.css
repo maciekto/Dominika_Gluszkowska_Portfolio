@@ -410,8 +410,8 @@ a, a:visited, a:focus, a:active {
     display: block;
     cursor: pointer;
     z-index: 60;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     width: 90px;
     height: 90px;
     background-color: rgba(255, 255, 255, 0.84);
@@ -436,10 +436,24 @@ a, a:visited, a:focus, a:active {
             transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
   }
   .Box {
-    height: 10vh;
+    height: 17vh;
+    margin: 0;
+  }
+  .Box-Inner {
+    height: 17vh;
+  }
+  .Box-Description {
+    margin: 0;
   }
   .Contact {
     height: 350px;
+  }
+  .BoxLink {
+    padding: 5px;
+    height: 17vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -601,6 +615,9 @@ h4 {
   }
   .Title-Three {
     display: block;
+  }
+  .Title {
+    height: 14vh;
   }
 }
 
