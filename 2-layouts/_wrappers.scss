@@ -9,13 +9,13 @@
         flex-direction: column;
     }
 }
-@media (min-width: 1024px){
+@media (min-width: 768px){
     .Wrapper{
         display: block;
-        transition: 2s;
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
+        overflow-y: none;
         scroll-behavior: smooth;
         background: rgb(255,255,255);
         background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 100%);

@@ -36,7 +36,7 @@ a, a:visited, a:focus, a:active {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   :root {
     overflow-y: hidden;
     overflow-x: auto;
@@ -61,14 +61,13 @@ a, a:visited, a:focus, a:active {
           flex-direction: column;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .Wrapper {
     display: block;
-    -webkit-transition: 2s;
-    transition: 2s;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: none;
     scroll-behavior: smooth;
     background: white;
     background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
@@ -253,9 +252,9 @@ a, a:visited, a:focus, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   position: relative;
   -webkit-perspective-origin: center;
           perspective-origin: center;
@@ -282,7 +281,7 @@ a, a:visited, a:focus, a:active {
       justify-content: space-around;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .Page {
     height: 100vh;
   }
@@ -397,6 +396,51 @@ a, a:visited, a:focus, a:active {
   padding-bottom: 20px;
   -webkit-box-shadow: 0px 0px 5px black;
           box-shadow: 0px 0px 5px black;
+}
+
+.ProjectsDesktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .Projects {
+    display: none;
+  }
+  .ProjectsDesktop {
+    display: block;
+    cursor: pointer;
+    z-index: 60;
+    -webkit-transition: 1s;
+    transition: 1s;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.84);
+    position: absolute;
+    bottom: -30px;
+    -webkit-box-shadow: 0px 0px 6px black;
+            box-shadow: 0px 0px 6px black;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    left: 46.5vw;
+  }
+  .ProjectsDesktop-Title {
+    -webkit-transform: rotateZ(-45deg) translateX(-28px) translateY(20px);
+            transform: rotateZ(-45deg) translateX(-28px) translateY(20px);
+    width: 100px;
+    height: auto;
+  }
+  .ProjectsDesktop:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
+            transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
+  }
+  .Box {
+    height: 10vh;
+  }
+  .Contact {
+    height: 350px;
+  }
 }
 
 .Form {
@@ -548,7 +592,7 @@ h4 {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .Title-One {
     display: none;
   }
@@ -759,7 +803,7 @@ h4 {
           transform: rotateY(10deg) translateZ(-5px);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .ProjectMain {
     display: none;
   }
@@ -848,7 +892,7 @@ h4 {
           transform: rotateZ(315deg);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .NavBar {
     display: none;
   }
@@ -908,6 +952,8 @@ h4 {
   transition: 0.5s;
   -webkit-box-shadow: 0px 0px 17px 2px black;
           box-shadow: 0px 0px 17px 2px black;
+  -webkit-transform: scale(2) rotateZ(45deg);
+          transform: scale(2) rotateZ(45deg);
 }
 
 .NavBarDesktop_AboutClick {
@@ -917,11 +963,25 @@ h4 {
           transform: rotateZ(45deg);
 }
 
+.NavBarDesktop_AboutClick:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateZ(45deg) scale(2);
+          transform: rotateZ(45deg) scale(2);
+}
+
 .NavBarDesktop_OfferClick {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: rotateZ(135deg);
           transform: rotateZ(135deg);
+}
+
+.NavBarDesktop_OfferClick:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateZ(135deg) scale(2);
+          transform: rotateZ(135deg) scale(2);
 }
 
 .NavBarDesktop_ContactClick {
@@ -931,7 +991,14 @@ h4 {
           transform: rotateZ(225deg);
 }
 
-@media (min-width: 1024px) {
+.NavBarDesktop_ContactClick:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateZ(225deg) scale(2);
+          transform: rotateZ(225deg) scale(2);
+}
+
+@media (min-width: 768px) {
   .NavBarDesktop {
     display: block;
   }

@@ -73,4 +73,42 @@
     
     box-shadow: 0px 0px 5px black;
 }
+.ProjectsDesktop{
+    display: none;
+}
+@media (min-width: 768px){
+    .Projects{
+        display: none;
+    }
+    .ProjectsDesktop{
+        display: block;
+        cursor: pointer;
+        z-index: 60;
+        transition: 1s;
+        width: 90px;
+        height: 90px;
+        background-color: rgba($color: #ffffff, $alpha: 0.84);
+        position: absolute;
+        bottom: -30px;
+        box-shadow: 0px 0px 6px black;
+        transform: rotateZ(45deg);
+        left:46.5vw;
+        &-Title{
+            transform: rotateZ(-45deg) translateX(-28px) translateY(20px);
+            width: 100px;
+            height: auto;
+            
+        }
+        &:hover{
+            transition: 0.5s;
+            transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
+        }
+    }
+    .Box{
+        height: 10vh;
+    }
+    .Contact{
+        height: 350px;
+    }
+}
 
