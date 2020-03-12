@@ -466,6 +466,12 @@ a, a:visited, a:focus, a:active {
 .Form-TextArea {
   resize: none;
   font-size: 1rem;
+  padding: 3px;
+}
+
+.Form-InputEmailFrom {
+  font-size: 1rem;
+  padding: 3px;
 }
 
 .Form-InputEmailFrom, .Form-InputEmailTo, .Form-TextArea {
@@ -487,6 +493,8 @@ a, a:visited, a:focus, a:active {
 }
 
 .Form-Btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border: none;
   border-bottom: 1px solid black;
   background-color: rgba(255, 255, 255, 0);
@@ -917,6 +925,8 @@ h4 {
           box-shadow: 0px 0px 6px;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
+  -webkit-animation: deference 4s alternate 1;
+          animation: deference 4s alternate 1;
 }
 
 .NavBarDesktop-Inner {
@@ -951,6 +961,8 @@ h4 {
 }
 
 .NavBarDesktop:hover {
+  -webkit-animation: none;
+          animation: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 0px 0px 17px 2px black;
@@ -1071,6 +1083,30 @@ input:focus {
 
 input:disabled {
   background-color: rgba(255, 255, 255, 0);
+}
+
+@media (min-width: 768px) {
+  .Form-InputEmailFrom:focus {
+    border: 0px solid black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-box-shadow: 0px 0px 4px black;
+            box-shadow: 0px 0px 4px black;
+  }
+  .Form-TextArea:focus {
+    border: 0px solid black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-box-shadow: 0px 0px 4px black;
+            box-shadow: 0px 0px 4px black;
+  }
+  .Form-Btn:hover {
+    border: 0px solid black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-box-shadow: 0px 0px 4px black;
+            box-shadow: 0px 0px 4px black;
+  }
 }
 
 .ProjectMain_clicked_left {

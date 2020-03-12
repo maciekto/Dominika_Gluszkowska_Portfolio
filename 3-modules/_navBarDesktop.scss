@@ -13,6 +13,8 @@ $transitionSpeed: 0.5s;
     z-index: 51;
     box-shadow: 0px 0px 6px;
     transform: rotateZ(45deg);
+    animation: deference 4s alternate 1;
+
     &-Inner{
         width: inherit;
         height: inherit;
@@ -37,6 +39,7 @@ $transitionSpeed: 0.5s;
         top: 15px;
     }
     &:hover{
+        animation: none;
         transition: $transitionSpeed;
         box-shadow: 0px 0px 17px 2px black;
         transform: scale(2) rotateZ(45deg);

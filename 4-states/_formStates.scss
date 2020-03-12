@@ -18,3 +18,24 @@ input:focus{
 input:disabled{
     background-color: rgba($color: #ffffff, $alpha: 0);
 }
+
+@media (min-width: 768px){
+    .Form{
+        &-InputEmailFrom:focus{
+            border: 0px solid black;
+            transition: 0.4s;
+            box-shadow: 0px 0px 4px black;
+        }
+        &-TextArea:focus{
+            border: 0px solid black;
+            transition: 0.4s;
+            box-shadow: 0px 0px 4px black;
+        }
+        &-Btn:hover{
+            border: 0px solid black;
+            transition: 0.4s;
+            box-shadow: 0px 0px 4px black;
+        }
+    }
+}
+
