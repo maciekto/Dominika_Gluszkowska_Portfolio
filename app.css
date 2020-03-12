@@ -61,6 +61,76 @@ a, a:visited, a:focus, a:active {
           flex-direction: column;
 }
 
+.Wrapper::after {
+  content: '';
+  opacity: 0.4;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: url("beforeXD/art2.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-animation: backgroundAnimations 9s alternate infinite;
+          animation: backgroundAnimations 9s alternate infinite;
+}
+
+@-webkit-keyframes backgroundAnimations {
+  0% {
+    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  20% {
+    background: url("beforeXD/art5.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background: url("beforeXD/art6.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  60% {
+    background: url("beforeXD/art7.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background: url("beforeXD/art3.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes backgroundAnimations {
+  0% {
+    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  20% {
+    background: url("beforeXD/art5.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background: url("beforeXD/art6.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  60% {
+    background: url("beforeXD/art7.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background: url("beforeXD/art3.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 768px) {
   .Wrapper {
     display: block;
@@ -70,7 +140,7 @@ a, a:visited, a:focus, a:active {
     overflow-y: none;
     scroll-behavior: smooth;
     background: white;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 40%);
   }
   .Wrapper-Inner {
     width: 300vw;
@@ -81,16 +151,7 @@ a, a:visited, a:focus, a:active {
     overflow-x: auto;
   }
   .Wrapper::after {
-    content: '';
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: url("beforeXD/art2.jpg") center center no-repeat;
-    background-size: cover;
+    opacity: 1;
   }
 }
 
