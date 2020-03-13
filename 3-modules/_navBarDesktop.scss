@@ -1,4 +1,4 @@
-$transitionSpeed: 0.5s;
+$transitionSpeed: 0.4s;
 
 .NavBarDesktop{
     display: none;
@@ -44,7 +44,50 @@ $transitionSpeed: 0.5s;
         box-shadow: 0px 0px 17px 2px black;
         transform: scale(2) rotateZ(45deg);
     }
+    &-Language{
+        transition: $transitionSpeed;
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        top: 35px;
+        left: 35px;
+        background: url("beforeXD/IconEng.png") center center no-repeat;
+        background-size: cover;
+        transform: rotateZ(-45deg);
+        &_pl{
+            background: url("beforeXD/IconPl.png") center center no-repeat; 
+            background-size: cover;
+        }
+        &_AboutClick{
+            transition: $transitionSpeed;
+            transform: rotateZ(-45deg);
+            &:hover{
+                transition: $transitionSpeed;
+                transform: scale(1.2) rotateZ(-45deg);
+            }
+        }
+        &_OfferClick{
+            transition: $transitionSpeed;
+            transform: rotateZ(-135deg);
+            &:hover{
+                transition: $transitionSpeed;
+                transform: scale(1.2) rotateZ(-135deg);
+            }
+        }
+        &_ContactClick{
+            transition: $transitionSpeed;
+            transform: rotateZ(-225deg);
+            &:hover{
+                transition: $transitionSpeed;
+                transform: scale(1.2) rotateZ(-225deg);
+            }
+        }
+        
+    }
 }
+
 .NavBarDesktop_AboutClick {
     transition: $transitionSpeed;
     transform: rotateZ(45deg);

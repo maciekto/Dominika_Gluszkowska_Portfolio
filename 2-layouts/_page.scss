@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     perspective-origin: center;
     perspective: 110px;
@@ -29,6 +29,7 @@
 @media (min-width: 768px){
     .Page{
         height: 100vh;
+        justify-content: space-evenly;
     }
     .Page2{
         margin-bottom: 0px;

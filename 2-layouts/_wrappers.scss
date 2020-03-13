@@ -67,6 +67,7 @@
         }
         &::after{
             opacity: 1;
+            animation: backgroundAnimations 7s alternate infinite;
         }
     }   
 }

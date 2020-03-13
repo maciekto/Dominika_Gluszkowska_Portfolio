@@ -152,6 +152,8 @@ a, a:visited, a:focus, a:active {
   }
   .Wrapper::after {
     opacity: 1;
+    -webkit-animation: backgroundAnimations 7s alternate infinite;
+            animation: backgroundAnimations 7s alternate infinite;
   }
 }
 
@@ -313,9 +315,9 @@ a, a:visited, a:focus, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   -webkit-perspective-origin: center;
           perspective-origin: center;
@@ -345,6 +347,9 @@ a, a:visited, a:focus, a:active {
 @media (min-width: 768px) {
   .Page {
     height: 100vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .Page2 {
     margin-bottom: 0px;
@@ -371,6 +376,7 @@ a, a:visited, a:focus, a:active {
 }
 
 .Box-Inner {
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,8 +406,13 @@ a, a:visited, a:focus, a:active {
   height: 350px;
 }
 
+.About-Title {
+  font-weight: bold;
+}
+
 .About-Inner {
   z-index: 47;
+  font-size: 1.6rem;
 }
 
 .Projects {
@@ -411,11 +422,20 @@ a, a:visited, a:focus, a:active {
 
 .Offer {
   z-index: 43;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.Offer-Title {
+  font-weight: bold;
+}
+
+.Offer-Description {
+  font-size: 1.5rem;
 }
 
 .ContactLink {
   z-index: 43;
+  margin-top: 50px;
 }
 
 .Contact {
@@ -811,7 +831,7 @@ h4 {
   background-size: cover;
   width: 125px;
   height: 100px;
-  top: 5%;
+  top: 0;
   right: 5%;
   -webkit-box-shadow: 3px 3px 3px black;
           box-shadow: 3px 3px 3px black;
@@ -975,8 +995,8 @@ h4 {
   position: fixed;
   top: -30px;
   left: 46.5vw;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   background-color: rgba(255, 255, 255, 0.84);
   width: 90px;
   height: 90px;
@@ -1024,52 +1044,115 @@ h4 {
 .NavBarDesktop:hover {
   -webkit-animation: none;
           animation: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-box-shadow: 0px 0px 17px 2px black;
           box-shadow: 0px 0px 17px 2px black;
   -webkit-transform: scale(2) rotateZ(45deg);
           transform: scale(2) rotateZ(45deg);
 }
 
+.NavBarDesktop-Language {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  top: 35px;
+  left: 35px;
+  background: url("beforeXD/IconEng.png") center center no-repeat;
+  background-size: cover;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+.NavBarDesktop-Language_pl {
+  background: url("beforeXD/IconPl.png") center center no-repeat;
+  background-size: cover;
+}
+
+.NavBarDesktop-Language_AboutClick {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+.NavBarDesktop-Language_AboutClick:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(1.2) rotateZ(-45deg);
+          transform: scale(1.2) rotateZ(-45deg);
+}
+
+.NavBarDesktop-Language_OfferClick {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotateZ(-135deg);
+          transform: rotateZ(-135deg);
+}
+
+.NavBarDesktop-Language_OfferClick:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(1.2) rotateZ(-135deg);
+          transform: scale(1.2) rotateZ(-135deg);
+}
+
+.NavBarDesktop-Language_ContactClick {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotateZ(-225deg);
+          transform: rotateZ(-225deg);
+}
+
+.NavBarDesktop-Language_ContactClick:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(1.2) rotateZ(-225deg);
+          transform: scale(1.2) rotateZ(-225deg);
+}
+
 .NavBarDesktop_AboutClick {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
 }
 
 .NavBarDesktop_AboutClick:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateZ(45deg) scale(2);
           transform: rotateZ(45deg) scale(2);
 }
 
 .NavBarDesktop_OfferClick {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateZ(135deg);
           transform: rotateZ(135deg);
 }
 
 .NavBarDesktop_OfferClick:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateZ(135deg) scale(2);
           transform: rotateZ(135deg) scale(2);
 }
 
 .NavBarDesktop_ContactClick {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateZ(225deg);
           transform: rotateZ(225deg);
 }
 
 .NavBarDesktop_ContactClick:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotateZ(225deg) scale(2);
           transform: rotateZ(225deg) scale(2);
 }
@@ -1237,6 +1320,9 @@ input:disabled {
 
 @media (min-height: 0px) and (max-height: 700px) and (max-width: 768px) {
   .ProjectMain1 {
+    display: none;
+  }
+  .ProjectMain3 {
     display: none;
   }
   .ProjectMain5 {
