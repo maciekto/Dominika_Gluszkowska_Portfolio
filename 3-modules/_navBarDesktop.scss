@@ -60,6 +60,10 @@ $transitionSpeed: 0.4s;
             background: url("beforeXD/IconPl.png") center center no-repeat; 
             background-size: cover;
         }
+        &_eng{
+            background: url("beforeXD/IconEng.png") center center no-repeat; 
+            background-size: cover;
+        }
         &_AboutClick{
             transition: $transitionSpeed;
             transform: rotateZ(-45deg);

@@ -915,7 +915,7 @@ h4 {
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
   top: 40vh;
-  right: -50px;
+  right: -35px;
 }
 
 .NavBar-Inner {
@@ -954,6 +954,60 @@ h4 {
   left: 7px;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
+}
+
+.NavBar-Language {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  top: 35px;
+  left: 35px;
+  background: url("beforeXD/IconEng.png") center center no-repeat;
+  background-size: cover;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+.NavBar-Language_pl {
+  background: url("beforeXD/IconPl.png") center center no-repeat;
+  background-size: cover;
+}
+
+.NavBar-Language_eng {
+  background: url("beforeXD/IconEng.png") center center no-repeat;
+  background-size: cover;
+}
+
+.NavBar-Language_AboutClick {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateZ(-405deg);
+          transform: rotateZ(-405deg);
+}
+
+.NavBar-Language_ProjectsClick {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateZ(calc(-135deg - 720deg));
+          transform: rotateZ(calc(-135deg - 720deg));
+}
+
+.NavBar-Language_OfferClick {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateZ(calc(-225deg - 360deg));
+          transform: rotateZ(calc(-225deg - 360deg));
+}
+
+.NavBar-Language_ContactClick {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateZ(calc(-315deg - 720deg));
+          transform: rotateZ(calc(-315deg - 720deg));
 }
 
 .NavBar_AboutClick {
@@ -1070,6 +1124,11 @@ h4 {
 
 .NavBarDesktop-Language_pl {
   background: url("beforeXD/IconPl.png") center center no-repeat;
+  background-size: cover;
+}
+
+.NavBarDesktop-Language_eng {
+  background: url("beforeXD/IconEng.png") center center no-repeat;
   background-size: cover;
 }
 

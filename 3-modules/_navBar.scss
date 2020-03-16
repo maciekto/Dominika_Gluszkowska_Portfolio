@@ -11,7 +11,7 @@ $transitionSpeed: 0.5s;
     box-shadow: 0px 0px 6px;
     transform: rotateZ(45deg);
     top: 40vh;
-    right: -50px;
+    right: -35px;
     &-Inner{
         width: inherit;
         height: inherit;
@@ -39,6 +39,44 @@ $transitionSpeed: 0.5s;
         top: 17px;
         left: 7px;
         transform: rotateZ(45deg);
+    }
+    &-Language{
+        transition: $transitionSpeed;
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        top: 35px;
+        left: 35px;
+        background: url("beforeXD/IconEng.png") center center no-repeat;
+        background-size: cover;
+        transform: rotateZ(-45deg);
+        &_pl{
+            background: url("beforeXD/IconPl.png") center center no-repeat; 
+            background-size: cover;
+        }
+        &_eng{
+            background: url("beforeXD/IconEng.png") center center no-repeat; 
+            background-size: cover;
+        }
+        &_AboutClick{
+            transition: $transitionSpeed;
+            transform: rotateZ(-405deg);
+        }
+        &_ProjectsClick{
+            transition: $transitionSpeed;
+            transform: rotateZ(calc(-135deg - 720deg));
+        }
+        &_OfferClick{
+            transition: $transitionSpeed;
+            transform: rotateZ(calc(-225deg - 360deg));
+        }
+        &_ContactClick{
+            transition: $transitionSpeed;
+            transform: rotateZ(calc(-315deg - 720deg));
+        }
+        
     }
 }
 .NavBar_AboutClick{
