@@ -69,7 +69,7 @@ $project10TranslateZ: -5px;
 
     &1{
         z-index: 50;
-        background: url("beforeXD/art1.jpg") center center no-repeat;
+        background: url("beforeXD/art3.jpg") center center no-repeat;
         background-size: cover;
         width: 300px;
         height: 320px;
@@ -77,19 +77,6 @@ $project10TranslateZ: -5px;
         left: -160px;
         transform:translateZ($project1TranslateZ) rotateY($project1RotateY);
         box-shadow: -3px 3px 3px  black;
-        
-        // &:hover{
-        //     animation: shakeProject1 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:translateZ($project1TranslateZ) rotateY($project1RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        // }
-        // @keyframes shakeProject1{
-        //     from{
-        //         transform:translateZ($project1TranslateZ) rotateY($project1RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:translateZ($project1TranslateZ) rotateY($project1RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &2{
         z-index: 50;
@@ -103,24 +90,10 @@ $project10TranslateZ: -5px;
         
         box-shadow: 3px 3px 3px  black;    
         transform:rotateY($project2RotateY);
-
-        // &:hover{
-        //     animation: shakeProject2 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateY($project2RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject2{
-        //     from{
-        //         transform:rotateY($project2RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateY($project2RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &3{
         z-index: 48;
-        background: url("beforeXD/art3.jpg") center center no-repeat;
+        background: url("beforeXD/art8.jpg") center center no-repeat;
         background-size: cover;
         width: 100px;
         height: 130px;
@@ -128,24 +101,10 @@ $project10TranslateZ: -5px;
         left: 13%;
         transform:rotateY($project3RotateY);
         box-shadow: -3px 3px 3px  black;
-
-        // &:hover{
-        //     animation: shakeProject3 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateY($project3RotateY)  scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject3{
-        //     from{
-        //         transform:rotateY($project3RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateY($project3RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &4{
         z-index: 46;
-        background: url("beforeXD/art4.png") center center no-repeat;
+        background: url("beforeXD/art1.jpg") center center no-repeat;
         background-size: cover;
         width: 150px;
         height: 120px;
@@ -153,20 +112,6 @@ $project10TranslateZ: -5px;
         right: 10%;
         box-shadow: 3px 3px 3px  black;
         transform: rotateY($project4RotateY) translateZ($project4TranslateZ);
-
-        // &:hover{
-        //     animation: shakeProject4 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateY($project4RotateY) translateZ($project4TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject4{
-        //     from{
-        //         transform:rotateY($project4RotateY) translateZ($project4TranslateZ) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateY($project4RotateY) translateZ($project4TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &5{
         z-index: 44;
@@ -178,20 +123,6 @@ $project10TranslateZ: -5px;
         left: 10%;
         box-shadow: -3px 3px 3px  black;
         transform: rotateY($project5RotateY);
-
-        // &:hover{
-        //     animation: shakeProject5 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateY($project5RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject5{
-        //     from{
-        //         transform:rotateY($project5RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateY($project5RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &6{
         z-index: 44;
@@ -203,24 +134,10 @@ $project10TranslateZ: -5px;
         right: 5%;
         box-shadow: 3px 3px 3px black;
         transform:rotateY($project6RotateY) translateZ($project6TranslateZ);
-
-        // &:hover{
-        //     animation: shakeProject6 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateY($project6RotateY) translateZ($project6TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject6{
-        //     from{
-        //         transform:rotateY($project6RotateY) translateZ($project6TranslateZ) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateY($project6RotateY) translateZ($project6TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &7{
         z-index: 42;
-        background: url("beforeXD/art7.jpg") center center no-repeat;
+        background: url("beforeXD/art9.jpg") center center no-repeat;
         background-size: cover;
         width: 175px;
         height: 140px;
@@ -228,24 +145,10 @@ $project10TranslateZ: -5px;
         right: 25%;
         box-shadow: -3px 3px 3px black;
         transform: rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY);
-
-        // &:hover{
-        //     animation: shakeProject7 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject7{
-        //     from{
-        //         transform:rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateZ($project7RotateZ) rotateX($project7RotateX) rotateY($project7RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &8{
         z-index: 41;
-        background: url("beforeXD/art8.jpg") center center no-repeat;
+        background: url("beforeXD/art0.jpg") center center no-repeat;
         background-size: cover;
         width: 100px;
         height: 150px;
@@ -253,24 +156,10 @@ $project10TranslateZ: -5px;
         left: 10%;
         box-shadow: -3px 3px 3px black;
         transform: rotateZ($project8RotateZ)rotateY($project8RotateY);
-
-        // &:hover{
-        //     animation: shakeProject8 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateZ($project8RotateZ)rotateY($project8RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject8{
-        //     from{
-        //         transform:rotateZ($project8RotateZ)rotateY($project8RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateZ($project8RotateZ)rotateY($project8RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &9{
         z-index: 40;
-        background: url("beforeXD/art9.jpg") center center no-repeat;
+        background: url("beforeXD/art4.jpg") center center no-repeat;
         background-size: cover;
         width: 120px;
         height: 120px;
@@ -278,24 +167,10 @@ $project10TranslateZ: -5px;
         right: 10%;
         box-shadow: 3px 3px 3px black;
         transform: rotateZ($project9RotateZ) rotateY($project9RotateY);
-
-        // &:hover{
-        //     animation: shakeProject9 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateZ($project9RotateZ) rotateY($project9RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject9{
-        //     from{
-        //         transform:rotateZ($project9RotateZ) rotateY($project9RotateY) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateZ($project9RotateZ) rotateY($project9RotateY) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
     &10{
         z-index: 39;
-        background: url("beforeXD/art10.png") center center no-repeat;
+        background: url("beforeXD/art10.jpg") center center no-repeat;
         background-size: cover;
         width: 150px;
         height: 150px;
@@ -303,20 +178,6 @@ $project10TranslateZ: -5px;
         left: -5%;
         box-shadow: -3px 3px 3px black;
         transform:rotateY($project10RotateY) translateZ($project10TranslateZ);
-
-        // &:hover{
-        //     animation: shakeProject10 $animationProjectDuration $animationType;
-        //     animation-iteration-count: 1;
-        //     transform:rotateY($project10RotateY) translateZ($project10TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-            
-        // }
-        // @keyframes shakeProject10{
-        //     from{
-        //         transform:rotateY($project10RotateY) translateZ($project10TranslateZ) scaleX($scaleXValueStart) scaleY($scaleYValueStart);
-        //     }to{
-        //         transform:rotateY($project10RotateY) translateZ($project10TranslateZ) scaleX($scaleXValueEnd) scaleY($scaleYValueEnd);
-        //     }
-        // }
     }
 }
 @media (min-width: 768px){

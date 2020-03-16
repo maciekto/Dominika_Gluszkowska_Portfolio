@@ -59,11 +59,12 @@ a, a:visited, a:focus, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .Wrapper::after {
   content: '';
-  opacity: 0.4;
+  opacity: 1;
   display: block;
   position: fixed;
   top: 0;
@@ -71,62 +72,62 @@ a, a:visited, a:focus, a:active {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: url("beforeXD/art2.jpg") center center no-repeat;
+  background: url("beforeXD/art3.jpg") center center no-repeat;
   background-size: cover;
-  -webkit-animation: backgroundAnimations 9s alternate infinite;
-          animation: backgroundAnimations 9s alternate infinite;
+  -webkit-filter: contrast(250%) hue-rotate(0deg);
+          filter: contrast(250%) hue-rotate(0deg);
 }
 
 @-webkit-keyframes backgroundAnimations {
   0% {
-    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background: url("beforeXD/art0.jpg") center center no-repeat;
     background-size: cover;
   }
   20% {
-    background: url("beforeXD/art5.jpg") center center no-repeat;
+    background: url("beforeXD/art8.jpg") center center no-repeat;
     background-size: cover;
   }
   40% {
-    background: url("beforeXD/art6.jpg") center center no-repeat;
+    background: url("beforeXD/art2.jpg") center center no-repeat;
     background-size: cover;
   }
   60% {
-    background: url("beforeXD/art7.jpg") center center no-repeat;
-    background-size: cover;
-  }
-  80% {
     background: url("beforeXD/art3.jpg") center center no-repeat;
     background-size: cover;
   }
+  80% {
+    background: url("beforeXD/art1.jpg") center center no-repeat;
+    background-size: cover;
+  }
   100% {
-    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background: url("beforeXD/art8.jpg") center center no-repeat;
     background-size: cover;
   }
 }
 
 @keyframes backgroundAnimations {
   0% {
-    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background: url("beforeXD/art0.jpg") center center no-repeat;
     background-size: cover;
   }
   20% {
-    background: url("beforeXD/art5.jpg") center center no-repeat;
+    background: url("beforeXD/art8.jpg") center center no-repeat;
     background-size: cover;
   }
   40% {
-    background: url("beforeXD/art6.jpg") center center no-repeat;
+    background: url("beforeXD/art2.jpg") center center no-repeat;
     background-size: cover;
   }
   60% {
-    background: url("beforeXD/art7.jpg") center center no-repeat;
-    background-size: cover;
-  }
-  80% {
     background: url("beforeXD/art3.jpg") center center no-repeat;
     background-size: cover;
   }
+  80% {
+    background: url("beforeXD/art1.jpg") center center no-repeat;
+    background-size: cover;
+  }
   100% {
-    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background: url("beforeXD/art8.jpg") center center no-repeat;
     background-size: cover;
   }
 }
@@ -149,11 +150,12 @@ a, a:visited, a:focus, a:active {
         -ms-flex-direction: row;
             flex-direction: row;
     overflow-x: auto;
+    background: rgba(255, 255, 255, 0);
   }
   .Wrapper::after {
     opacity: 1;
-    -webkit-animation: backgroundAnimations 7s alternate infinite;
-            animation: backgroundAnimations 7s alternate infinite;
+    -webkit-animation: backgroundAnimations 9s alternate infinite, hueChange 2s alternate infinite;
+            animation: backgroundAnimations 9s alternate infinite, hueChange 2s alternate infinite;
   }
 }
 
@@ -411,10 +413,9 @@ a, a:visited, a:focus, a:active {
 }
 
 .About-Inner {
-  width: calc(70vw - 100px);
+  width: calc(70vw);
   z-index: 47;
-  font-size: 1.4rem;
-  padding: 0 50px;
+  font-size: 1.2rem;
 }
 
 .Projects {
@@ -432,7 +433,7 @@ a, a:visited, a:focus, a:active {
 }
 
 .Offer-Description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .ContactLink {
@@ -511,6 +512,14 @@ a, a:visited, a:focus, a:active {
   }
   .Contact {
     height: 350px;
+  }
+  .About-Inner {
+    width: calc(70vw - 100px);
+    font-size: 1.4rem;
+    padding: 0 50px;
+  }
+  .Offer-Description {
+    font-size: 1.4rem;
   }
   .Projects {
     display: none;
@@ -757,7 +766,7 @@ h4 {
 
 .ProjectMain1 {
   z-index: 50;
-  background: url("beforeXD/art1.jpg") center center no-repeat;
+  background: url("beforeXD/art3.jpg") center center no-repeat;
   background-size: cover;
   width: 300px;
   height: 320px;
@@ -787,7 +796,7 @@ h4 {
 
 .ProjectMain3 {
   z-index: 48;
-  background: url("beforeXD/art3.jpg") center center no-repeat;
+  background: url("beforeXD/art8.jpg") center center no-repeat;
   background-size: cover;
   width: 100px;
   height: 130px;
@@ -801,7 +810,7 @@ h4 {
 
 .ProjectMain4 {
   z-index: 46;
-  background: url("beforeXD/art4.png") center center no-repeat;
+  background: url("beforeXD/art1.jpg") center center no-repeat;
   background-size: cover;
   width: 150px;
   height: 120px;
@@ -843,7 +852,7 @@ h4 {
 
 .ProjectMain7 {
   z-index: 42;
-  background: url("beforeXD/art7.jpg") center center no-repeat;
+  background: url("beforeXD/art9.jpg") center center no-repeat;
   background-size: cover;
   width: 175px;
   height: 140px;
@@ -857,7 +866,7 @@ h4 {
 
 .ProjectMain8 {
   z-index: 41;
-  background: url("beforeXD/art8.jpg") center center no-repeat;
+  background: url("beforeXD/art0.jpg") center center no-repeat;
   background-size: cover;
   width: 100px;
   height: 150px;
@@ -871,7 +880,7 @@ h4 {
 
 .ProjectMain9 {
   z-index: 40;
-  background: url("beforeXD/art9.jpg") center center no-repeat;
+  background: url("beforeXD/art4.jpg") center center no-repeat;
   background-size: cover;
   width: 120px;
   height: 120px;
@@ -885,7 +894,7 @@ h4 {
 
 .ProjectMain10 {
   z-index: 39;
-  background: url("beforeXD/art10.png") center center no-repeat;
+  background: url("beforeXD/art10.jpg") center center no-repeat;
   background-size: cover;
   width: 150px;
   height: 150px;
@@ -917,7 +926,7 @@ h4 {
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
   top: 40vh;
-  right: -35px;
+  right: -30px;
 }
 
 .NavBar-Inner {
