@@ -29,7 +29,7 @@ const pl = {
         description: "- ilustracje -<br />- plakaty -<br />- ulotki -<br />- wizytówki -<br />- przygotowywanie projektu do druku -<br />- collage art -"
     },
     projects: "Moje wszystkie projekty",
-    contactLink: "Kontakt.",
+    contactLink: "Kontakt",
     form: {
         title: "Wyślij wiadomość tutaj:",
         emailFrom: "Twój email:",
@@ -128,6 +128,9 @@ function engChange(){
     ProjectsMobile.innerHTML = eng.projects;
 
     TitleDesktopLang.innerHTML = eng.desktopTitle;
+    TitleMobileOneLang.innerHTML = eng.mobileTitle.one;
+    TitleMobileTwoLang.innerHTML = eng.mobileTitle.two;
+
     AboutTitleLang.innerHTML = eng.about.title;
     AboutDescriptionLang.innerHTML = eng.about.description;
 
@@ -168,6 +171,9 @@ function plChange(){
     ProjectsMobile.innerHTML = eng.projects;
 
     TitleDesktopLang.innerHTML = pl.desktopTitle;
+    TitleMobileOneLang.innerHTML = pl.mobileTitle.one;
+    TitleMobileTwoLang.innerHTML = pl.mobileTitle.two;
+
     AboutTitleLang.innerHTML = pl.about.title;
     AboutDescriptionLang.innerHTML = pl.about.description;
 

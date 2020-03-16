@@ -29,8 +29,10 @@
         font-weight: bold;
     }
     &-Inner{
+        width: calc(70vw - 100px);
         z-index: 47;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        padding: 0 50px;
     }
 }
 
@@ -46,7 +48,7 @@
         font-weight: bold;
     }
     &-Description{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 .ContactLink{
