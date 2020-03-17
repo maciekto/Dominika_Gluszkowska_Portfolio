@@ -2,6 +2,7 @@ const ProjectDesktopMainDiv = document.querySelector('.ProjectsDesktop');
 const ProjectsDesktopTitle = document.querySelector('.ProjectsDesktop-Title');
 const ProjectsDesktopInner = document.querySelector('.ProjectsDesktop-Inner');
 
+const ProjectsDesktopProject0 = document.querySelector('.ProjectsDesktop-Project0');
 const ProjectsDesktopProject1 = document.querySelector('.ProjectsDesktop-Project1');
 const ProjectsDesktopProject2 = document.querySelector('.ProjectsDesktop-Project2');
 const ProjectsDesktopProject3 = document.querySelector('.ProjectsDesktop-Project3');
@@ -41,6 +42,21 @@ function seeProjects(){
     setTimeout(()=>{
         ProjectsDesktopProject8.style.cssText = 'display: grid';
     }, 2850);
+    setTimeout(()=>{
+        ProjectsDesktopProject6.style.cssText = 'display: grid';
+    }, 3250);
+    setTimeout(()=>{
+        ProjectsDesktopProject0.style.cssText = 'display: grid';
+    }, 3650);
+    setTimeout(()=>{
+        ProjectsDesktopProject5.style.cssText = 'display: grid';
+    }, 4050);
+    setTimeout(()=>{
+        ProjectsDesktopProject1.style.cssText = 'display: grid';
+    }, 4450);
+    setTimeout(()=>{
+        ProjectsDesktopProject4.style.cssText = 'display: grid';
+    }, 4850);
 
     ProjectsDesktopExit.addEventListener('click', unseeProjects);
 }
@@ -49,13 +65,18 @@ function unseeProjects(){
     ProjectDesktopMainDiv.classList.toggle('ProjectsDesktop_clicked');
     ProjectsDesktopInner.style.cssText = 'display: none';
 
-    
+    ProjectsDesktopProject0.style.cssText = 'display: none';
+    ProjectsDesktopProject1.style.cssText = 'display: none';
     ProjectsDesktopProject2.style.cssText = 'display: none';
     ProjectsDesktopProject3.style.cssText = 'display: none';
+    ProjectsDesktopProject4.style.cssText = 'display: none';
+    ProjectsDesktopProject5.style.cssText = 'display: none';
+    ProjectsDesktopProject6.style.cssText = 'display: none';
     ProjectsDesktopProject7.style.cssText = 'display: none';
     ProjectsDesktopProject8.style.cssText = 'display: none';
     ProjectsDesktopProject9.style.cssText = 'display: none';
     ProjectsDesktopProject10.style.cssText = 'display: none';
+    
 
     setTimeout(()=>{
         ProjectDesktopMainDiv.addEventListener('click', seeProjects);

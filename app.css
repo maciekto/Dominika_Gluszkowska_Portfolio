@@ -1314,6 +1314,7 @@ h4 {
   .ProjectsDesktop-Inner {
     position: relative;
     height: 100%;
+    scroll-behavior: smooth;
     overflow: auto;
     display: none;
     width: 100%;
@@ -1340,9 +1341,11 @@ h4 {
     }
   }
   .ProjectsDesktop-Exit {
+    margin-top: 10px;
+    margin-right: 10px;
     cursor: pointer;
     z-index: 70;
-    position: absolute;
+    position: fixed;
     width: 40px;
     height: 40px;
     background: url("beforeXD/exitBtn.png") center center no-repeat;
@@ -1358,41 +1361,33 @@ h4 {
     display: grid;
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: (200px)[4];
-        grid-template-rows: repeat(4, 200px);
+    -ms-grid-rows: (200px)[6];
+        grid-template-rows: repeat(6, 200px);
     grid-gap: 0px;
-        grid-template-areas: "a10 a9 a9 a2 a8" "a10 a9 a9 a3 a3" "a10 . a7 a3 a3" ". . a7 . .";
+        grid-template-areas: "a10 a8 a8 a2 a1" "a10 a8 a8 a3 a3" "a10 a5 a7 a3 a3" "a6   a5 a7 a0 a0" "a6  a4  a7  a0 a0" "a9  a4  .  a0 a0";
   }
   .ProjectsDesktop-Project {
     -webkit-transition: 0.1s;
     transition: 0.1s;
   }
-  .ProjectsDesktop-Project:hover {
-    cursor: pointer;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .ProjectsDesktop-Project10 {
+  .ProjectsDesktop-Project0 {
     display: none;
-    -ms-grid-row: 1;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    grid-area: a10;
-    background: url("beforeXD/desktop/art10.jpg") center center no-repeat;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: a0;
+    background: url("beforeXD/desktop/art0.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
   }
-  .ProjectsDesktop-Project9 {
+  .ProjectsDesktop-Project1 {
     display: none;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-area: a9;
-    background: url("beforeXD/desktop/art9.jpg") center center no-repeat;
+    -ms-grid-column: 5;
+    grid-area: a1;
+    background: url("beforeXD/desktop/art1.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
@@ -1403,16 +1398,6 @@ h4 {
     -ms-grid-column: 4;
     grid-area: a2;
     background: url("beforeXD/desktop/art2.jpg") center center no-repeat;
-    background-size: cover;
-    -webkit-animation: fade 0.4s ease-in 1;
-            animation: fade 0.4s ease-in 1;
-  }
-  .ProjectsDesktop-Project8 {
-    display: none;
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    grid-area: a8;
-    background: url("beforeXD/desktop/art6.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
@@ -1429,13 +1414,79 @@ h4 {
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
   }
-  .ProjectsDesktop-Project7 {
+  .ProjectsDesktop-Project4 {
+    display: none;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: a4;
+    background: url("beforeXD/desktop/art4.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-animation: fade 0.4s ease-in 1;
+            animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project5 {
     display: none;
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: a5;
+    background: url("beforeXD/desktop/art5.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-animation: fade 0.4s ease-in 1;
+            animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project6 {
+    display: none;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: a6;
+    background: url("beforeXD/desktop/art6.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-animation: fade 0.4s ease-in 1;
+            animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project7 {
+    display: none;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 3;
     grid-area: a7;
     background: url("beforeXD/desktop/art7.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-animation: fade 0.4s ease-in 1;
+            animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project8 {
+    display: none;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: a8;
+    background: url("beforeXD/desktop/art8projects.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-animation: fade 0.4s ease-in 1;
+            animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project9 {
+    display: none;
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: a9;
+    background: url("beforeXD/desktop/art9.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-animation: fade 0.4s ease-in 1;
+            animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project10 {
+    display: none;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: a10;
+    background: url("beforeXD/desktop/art10.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
