@@ -6,7 +6,7 @@
         display: block;
         cursor: pointer;
         z-index: 60;
-        transition: 0.5s;
+        transition: 0.4s;
         width: 90px;
         height: 90px;
         background-color: rgba($color: #ffffff, $alpha: 0.84);
@@ -23,8 +23,114 @@
             
         }
         &:hover{
-            transition: 0.5s;
+            transition: 0.4s;
             transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
+        }
+        &_clicked{
+            cursor: auto;
+            width: 90vw;
+            height: 90vh;
+            left:5vw;
+            bottom: 0px;
+            transition: 0.4s;
+            transform: rotateZ(0deg);
+            &:hover{
+                transition: 0.4s;
+                transform: scale(1) rotateZ(0deg) translateY(0px) translateX(0px); 
+            }
+        }
+        &-Inner{
+            position: relative;
+            height: 100%;
+            overflow: auto;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #ffffff, $alpha: 0.84);
+            opacity: 1;
+            animation: fade 1s ease-in 1;
+            @keyframes fade {
+                from{
+                    opacity: 0;
+                }to{
+                    opacity: 1;
+                }
+            }
+        }
+        &-Exit{
+            cursor: pointer;
+            z-index: 70;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: url("beforeXD/exitBtn.png") center center no-repeat;
+            background-size: cover;
+            top: 0;
+            right: 0;
+        }
+        &-Grid{
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-gap: 0px;
+            grid-template-areas: 
+            "a10 a9 a9 a2 a8"
+            "a10 a9 a9 a3 a3"
+            "a10 . a7 a3 a3"
+            ". . a7 . .";
+        }
+        &-Project{
+            transition: 0.1s;
+            &:hover{
+                cursor: pointer;
+                transition: 0.1s;
+                transform: scale(1.1);
+            }
+        }
+        &-Project10{
+            display: none;
+            grid-area: a10;
+            background: url("beforeXD/desktop/art10.jpg") center center no-repeat;
+            background-size: cover;
+            animation: fade 0.4s ease-in 1;
+        }
+        &-Project9{
+            display: none;
+            grid-area: a9;
+            background: url("beforeXD/desktop/art9.jpg") center center no-repeat;
+            background-size: cover;
+            animation: fade 0.4s ease-in 1;
+        }
+        &-Project2{
+            display: none;
+            grid-area: a2;
+            background: url("beforeXD/desktop/art2.jpg") center center no-repeat;
+            background-size: cover;
+            animation: fade 0.4s ease-in 1;
+        }
+        &-Project8{
+            display: none;
+            grid-area: a8;
+            background: url("beforeXD/desktop/art6.jpg") center center no-repeat;
+            background-size: cover;
+            animation: fade 0.4s ease-in 1;
+        }
+        &-Project3{
+            display: none;
+            grid-area: a3;
+            background: url("beforeXD/desktop/art3.jpg") center center no-repeat;
+            background-size: cover;
+            animation: fade 0.4s ease-in 1;
+        }
+        &-Project7{
+            display: none;
+            grid-area: a7;
+            background: url("beforeXD/desktop/art7.jpg") center center no-repeat;
+            background-size: cover;
+            animation: fade 0.4s ease-in 1;
         }
     }
 }

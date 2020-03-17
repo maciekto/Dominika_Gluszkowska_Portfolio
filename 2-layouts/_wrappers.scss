@@ -25,27 +25,34 @@
         filter: contrast(250%) hue-rotate(0deg);
         @keyframes backgroundAnimations {
             0%{
-                background: url("beforeXD/desktop/art0des.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art1.jpg") center center no-repeat;
+                
                 background-size: cover;
             }
             20%{
-                background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
+                background: url("beforeXD/desktop/art0.jpg") center center no-repeat;
+                
                 background-size: cover;
             }
             40%{
-                background: url("beforeXD/desktop/art2des.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art7.jpg") center center no-repeat;
+               
                 background-size: cover;
             }
             60%{
-                background: url("beforeXD/desktop/art3des.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art2.jpg") center center no-repeat;
                 background-size: cover;
             }
             80%{
-                background: url("beforeXD/desktop/art1des.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art3.jpg") center center no-repeat;
+                
+                
                 background-size: cover;
             }
             100%{
-                background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
+                background: url("beforeXD/desktop/art8.jpg") center center no-repeat;
+               
+                
                 background-size: cover;
             }
         }

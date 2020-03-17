@@ -92,7 +92,7 @@ function preview1(){
     removeClasses();
     removeMainListener(1, preview1);
 
-    this.classList.toggle('ProjectMain_clicked_left');
+    this.classList.toggle('ProjectMain_clickedLeft_1');
     this.addEventListener('click', previewBack1);
 }
     function previewBack1(){
@@ -105,7 +105,7 @@ function preview1(){
         function previewReturn1(){
             removeThirdListener(1, previewReturn1);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_left')
+            this.classList.toggle('ProjectMain_clickedLeft_1')
             Back1.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview1);
@@ -117,7 +117,7 @@ function preview2(){
     removeClasses();
     removeMainListener(2, preview2);
 
-    this.classList.toggle('ProjectMain_clicked_right');
+    this.classList.toggle('ProjectMain_clickedRight_2');
     this.addEventListener('click', previewBack2);
 }
     function previewBack2(){
@@ -130,7 +130,7 @@ function preview2(){
         function previewReturn2(){
             removeThirdListener(2, previewReturn2);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_right')
+            this.classList.toggle('ProjectMain_clickedRight_2')
             Back2.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview2);
@@ -142,7 +142,7 @@ function preview3(){
     
     removeClasses();
     removeMainListener(3, preview3);
-    this.classList.toggle('ProjectMain_clicked_left');
+    this.classList.toggle('ProjectMain_clickedLeft_3');
     this.addEventListener('click', previewBack3);
 }
     // function for card/project preview BACK with description
@@ -157,7 +157,7 @@ function preview3(){
         function previewReturn3(){
             removeThirdListener(3, previewReturn3);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_left')
+            this.classList.toggle('ProjectMain_clickedLeft_3')
             Back3.classList.toggle('ProjectMain-Back_visible');
             
             this.addEventListener('click', preview3); 
@@ -168,7 +168,7 @@ function preview4(){
     removeClasses();
     removeMainListener(4, preview4);
 
-    this.classList.toggle('ProjectMain_clicked_right');
+    this.classList.toggle('ProjectMain_clickedRight_4');
     this.addEventListener('click', previewBack4);
 }
     function previewBack4(){
@@ -181,7 +181,7 @@ function preview4(){
         function previewReturn4(){
             removeThirdListener(4, previewReturn4);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_right')
+            this.classList.toggle('ProjectMain_clickedRight_4')
             Back4.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview4);
@@ -193,7 +193,7 @@ function preview5(){
     removeClasses();
     removeMainListener(5, preview5);
 
-    this.classList.toggle('ProjectMain_clicked_left');
+    this.classList.toggle('ProjectMain_clickedLeft_5');
     this.addEventListener('click', previewBack5);
 }
     function previewBack5(){
@@ -206,7 +206,7 @@ function preview5(){
         function previewReturn5(){
             removeThirdListener(5, previewReturn5);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_left')
+            this.classList.toggle('ProjectMain_clickedLeft_5')
             Back5.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview5);
@@ -218,7 +218,7 @@ function preview6(){
     removeClasses();
     removeMainListener(6, preview6);
 
-    this.classList.toggle('ProjectMain_clicked_right');
+    this.classList.toggle('ProjectMain_clickedRight_6');
     this.addEventListener('click', previewBack6);
 }
     function previewBack6(){
@@ -231,7 +231,7 @@ function preview6(){
         function previewReturn6(){
             removeThirdListener(6, previewReturn6);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_right')
+            this.classList.toggle('ProjectMain_clickedRight_6')
             Back6.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview6);
@@ -243,7 +243,7 @@ function preview7(){
     removeClasses();
     removeMainListener(7, preview7);
 
-    this.classList.toggle('ProjectMain_clicked_left');
+    this.classList.toggle('ProjectMain_clickedLeft_7');
     this.addEventListener('click', previewBack7);
 }
     function previewBack7(){
@@ -256,7 +256,7 @@ function preview7(){
         function previewReturn7(){
             removeThirdListener(7, previewReturn7);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_left')
+            this.classList.toggle('ProjectMain_clickedLeft_7')
             Back7.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview7);
@@ -268,7 +268,7 @@ function preview8(){
     removeClasses();
     removeMainListener(8, preview8);
 
-    this.classList.toggle('ProjectMain_clicked_left');
+    this.classList.toggle('ProjectMain_clickedLeft_8');
     this.addEventListener('click', previewBack8);
 }
     function previewBack8(){
@@ -281,7 +281,7 @@ function preview8(){
         function previewReturn8(){
             removeThirdListener(8, previewReturn8);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_left')
+            this.classList.toggle('ProjectMain_clickedLeft_8')
             Back8.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview8);
@@ -293,7 +293,7 @@ function preview9(){
     removeClasses();
     removeMainListener(9, preview9);
 
-    this.classList.toggle('ProjectMain_clicked_right');
+    this.classList.toggle('ProjectMain_clickedRight_9');
     this.addEventListener('click', previewBack9);
 }
     function previewBack9(){
@@ -306,7 +306,7 @@ function preview9(){
         function previewReturn9(){
             removeThirdListener(9, previewReturn9);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_right')
+            this.classList.toggle('ProjectMain_clickedRight_9')
             Back9.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview9);
@@ -318,7 +318,7 @@ function preview10(){
     removeClasses();
     removeMainListener(10, preview10);
 
-    this.classList.toggle('ProjectMain_clicked_left');
+    this.classList.toggle('ProjectMain_clickedLeft_10');
     this.addEventListener('click', previewBack10);
 }
     function previewBack10(){
@@ -331,7 +331,7 @@ function preview10(){
         function previewReturn10(){
             removeThirdListener(10, previewReturn10);
             this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_left')
+            this.classList.toggle('ProjectMain_clickedLeft_10')
             Back10.classList.toggle('ProjectMain-Back_visible');
 
             this.addEventListener('click', preview10);
@@ -340,8 +340,17 @@ function preview10(){
 
 function removeClasses(){
     Projects.forEach(element => {
-        element.classList.remove('ProjectMain_clicked_left');
-        element.classList.remove('ProjectMain_clicked_right');
+        element.classList.remove('ProjectMain_clickedLeft_1');
+        element.classList.remove('ProjectMain_clickedLeft_3');
+        element.classList.remove('ProjectMain_clickedLeft_5');
+        element.classList.remove('ProjectMain_clickedLeft_7');
+        element.classList.remove('ProjectMain_clickedLeft_8');
+        element.classList.remove('ProjectMain_clickedLeft_10');
+
+        element.classList.remove('ProjectMain_clickedRight_2');
+        element.classList.remove('ProjectMain_clickedRight_4');
+        element.classList.remove('ProjectMain_clickedRight_6');
+        element.classList.remove('ProjectMain_clickedRight_9');
         
         element.classList.remove('ProjectMain_back');
         Back1.classList.remove('ProjectMain-Back_visible');

@@ -1,4 +1,4 @@
-.ProjectMain_clicked_left{
+.ProjectMain_clickedLeft{
     transition: 0.6s;
     z-index: 55;
     position: fixed;
@@ -8,8 +8,63 @@
     left: 10vw;
     transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
     box-shadow: 0px 0px 10px black;
+    &_1{
+        z-index: 55;
+        top: 20vw;
+        left: 7.5vw;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 85vw;
+        height: 60vw;
+        box-shadow: 0px 0px 10px black;
+    }
+    &_3{
+        z-index: 55;
+        top: 20vw;
+        left: 20vw;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 60vw;
+        height: 60vw;
+        box-shadow: 0px 0px 10px black;
+    }
+    &_5{
+        z-index: 55;
+        top: 5vw;
+        left: 20vw;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 60vw;
+        height: 90vw;
+        box-shadow: 0px 0px 10px black;
+    }
+    &_7{
+        z-index: 55;
+        top: 20vw;
+        left: 15vw;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 70vw;
+        height: 60vw;
+        box-shadow: 0px 0px 10px black;
+    }
+    &_8{
+        z-index: 55;
+        top: -10vw;
+        left: 15vw;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 70vw;
+        height: 100vw;
+        box-shadow: 0px 0px 10px black;
+    }
+    &_10{
+        z-index: 55;
+        top: -5vw;
+        left: 15vw;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 70vw;
+        height: 110vw;
+        box-shadow: 0px 0px 10px black;
+    }
+    
 }
-.ProjectMain_clicked_right{
+.ProjectMain_clickedRight{
     transition: 0.6s;
     z-index: 55;
     position: fixed;
@@ -19,6 +74,40 @@
     right: 10vw;
     transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
     box-shadow: 0px 0px 10px black;
+    &_2{
+        z-index: 55;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 80vw;
+        height: 70vw;
+        top: 15vw;
+        right: 10vw;
+    }
+    &_4{
+        z-index: 55;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 80vw;
+        height: 110vw;
+        top: -5vw;
+        right: 10vw;
+    }
+    &_6{
+        z-index: 55;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 80vw;
+        height: 100vw;
+        top: 10vw;
+        right: 10vw;
+    }
+    &_9{
+        z-index: 55;
+        transform: rotateY(0deg) scaleX(0.8) scaleY(0.8);
+        width: 80vw;
+        height: 100vw;
+        top: 0vw;
+        right: 10vw;
+    }
+    
+    
 }
 .ProjectMain_back{
     transform: rotateY(180deg) scaleX(0.8) scaleY(0.8);
