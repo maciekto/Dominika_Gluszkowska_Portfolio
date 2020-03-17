@@ -72,7 +72,7 @@ a, a:visited, a:focus, a:active {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: url("beforeXD/art3.jpg") center center no-repeat;
+  background: url("beforeXD/art0mobile2.jpg") center center no-repeat;
   background-size: cover;
   -webkit-filter: contrast(250%) hue-rotate(0deg);
           filter: contrast(250%) hue-rotate(0deg);
@@ -80,54 +80,54 @@ a, a:visited, a:focus, a:active {
 
 @-webkit-keyframes backgroundAnimations {
   0% {
-    background: url("beforeXD/art0.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art0des.jpg") center center no-repeat;
     background-size: cover;
   }
   20% {
-    background: url("beforeXD/art8.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
     background-size: cover;
   }
   40% {
-    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art2des.jpg") center center no-repeat;
     background-size: cover;
   }
   60% {
-    background: url("beforeXD/art3.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art3des.jpg") center center no-repeat;
     background-size: cover;
   }
   80% {
-    background: url("beforeXD/art1.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art1des.jpg") center center no-repeat;
     background-size: cover;
   }
   100% {
-    background: url("beforeXD/art8.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
     background-size: cover;
   }
 }
 
 @keyframes backgroundAnimations {
   0% {
-    background: url("beforeXD/art0.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art0des.jpg") center center no-repeat;
     background-size: cover;
   }
   20% {
-    background: url("beforeXD/art8.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
     background-size: cover;
   }
   40% {
-    background: url("beforeXD/art2.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art2des.jpg") center center no-repeat;
     background-size: cover;
   }
   60% {
-    background: url("beforeXD/art3.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art3des.jpg") center center no-repeat;
     background-size: cover;
   }
   80% {
-    background: url("beforeXD/art1.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art1des.jpg") center center no-repeat;
     background-size: cover;
   }
   100% {
-    background: url("beforeXD/art8.jpg") center center no-repeat;
+    background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
     background-size: cover;
   }
 }
@@ -156,6 +156,26 @@ a, a:visited, a:focus, a:active {
     opacity: 1;
     -webkit-animation: backgroundAnimations 9s alternate infinite, hueChange 2s alternate infinite;
             animation: backgroundAnimations 9s alternate infinite, hueChange 2s alternate infinite;
+  }
+  @-webkit-keyframes hueChange {
+    from {
+      -webkit-filter: contrast(250%) hue-rotate(90deg);
+              filter: contrast(250%) hue-rotate(90deg);
+    }
+    to {
+      -webkit-filter: contrast(250%) hue-rotate(360deg);
+              filter: contrast(250%) hue-rotate(360deg);
+    }
+  }
+  @keyframes hueChange {
+    from {
+      -webkit-filter: contrast(250%) hue-rotate(90deg);
+              filter: contrast(250%) hue-rotate(90deg);
+    }
+    to {
+      -webkit-filter: contrast(250%) hue-rotate(360deg);
+              filter: contrast(250%) hue-rotate(360deg);
+    }
   }
 }
 
@@ -766,7 +786,7 @@ h4 {
 
 .ProjectMain1 {
   z-index: 50;
-  background: url("beforeXD/art3.jpg") center center no-repeat;
+  background: url("beforeXD/art9mobile.jpg") center center no-repeat;
   background-size: cover;
   width: 300px;
   height: 320px;
@@ -782,12 +802,12 @@ h4 {
   z-index: 50;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
-  background: url("beforeXD/art2.jpg") center center no-repeat;
+  background: url("beforeXD/art2mobile.jpg") center center no-repeat;
   background-size: cover;
-  width: 60px;
+  width: 90px;
   height: 90px;
   top: 12%;
-  right: 4%;
+  right: 10%;
   -webkit-box-shadow: 3px 3px 3px  black;
           box-shadow: 3px 3px 3px  black;
   -webkit-transform: rotateY(-10deg);
@@ -796,7 +816,7 @@ h4 {
 
 .ProjectMain3 {
   z-index: 48;
-  background: url("beforeXD/art8.jpg") center center no-repeat;
+  background: url("beforeXD/art8mobile2.jpg") center center no-repeat;
   background-size: cover;
   width: 100px;
   height: 130px;
@@ -810,10 +830,10 @@ h4 {
 
 .ProjectMain4 {
   z-index: 46;
-  background: url("beforeXD/art1.jpg") center center no-repeat;
+  background: url("beforeXD/art1mobile2.jpg") center center no-repeat;
   background-size: cover;
-  width: 150px;
-  height: 120px;
+  width: 110px;
+  height: 150px;
   top: 62%;
   right: 10%;
   -webkit-box-shadow: 3px 3px 3px  black;
@@ -824,12 +844,12 @@ h4 {
 
 .ProjectMain5 {
   z-index: 44;
-  background: url("beforeXD/art5.jpg") center center no-repeat;
+  background: url("beforeXD/art6mobile.jpg") center center no-repeat;
   background-size: cover;
-  width: 150px;
-  height: 120px;
+  width: 110px;
+  height: 160px;
   top: -10%;
-  left: 10%;
+  left: 8%;
   -webkit-box-shadow: -3px 3px 3px  black;
           box-shadow: -3px 3px 3px  black;
   -webkit-transform: rotateY(10deg);
@@ -838,10 +858,10 @@ h4 {
 
 .ProjectMain6 {
   z-index: 44;
-  background: url("beforeXD/art6.jpg") center center no-repeat;
+  background: url("beforeXD/art7mobile.jpg") center center no-repeat;
   background-size: cover;
-  width: 125px;
-  height: 100px;
+  width: 90px;
+  height: 150px;
   top: 0;
   right: 5%;
   -webkit-box-shadow: 3px 3px 3px black;
@@ -852,10 +872,10 @@ h4 {
 
 .ProjectMain7 {
   z-index: 42;
-  background: url("beforeXD/art9.jpg") center center no-repeat;
+  background: url("beforeXD/art3mobile.jpg") center center no-repeat;
   background-size: cover;
-  width: 175px;
-  height: 140px;
+  width: 195px;
+  height: 130px;
   top: 65%;
   right: 25%;
   -webkit-box-shadow: -3px 3px 3px black;
@@ -866,10 +886,10 @@ h4 {
 
 .ProjectMain8 {
   z-index: 41;
-  background: url("beforeXD/art0.jpg") center center no-repeat;
+  background: url("beforeXD/art10mobile.jpg") center center no-repeat;
   background-size: cover;
   width: 100px;
-  height: 150px;
+  height: 140px;
   top: -10%;
   left: 10%;
   -webkit-box-shadow: -3px 3px 3px black;
@@ -880,10 +900,10 @@ h4 {
 
 .ProjectMain9 {
   z-index: 40;
-  background: url("beforeXD/art4.jpg") center center no-repeat;
+  background: url("beforeXD/art0mobile2.jpg") center center no-repeat;
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 130px;
   top: 58%;
   right: 10%;
   -webkit-box-shadow: 3px 3px 3px black;
@@ -894,12 +914,12 @@ h4 {
 
 .ProjectMain10 {
   z-index: 39;
-  background: url("beforeXD/art10.jpg") center center no-repeat;
+  background: url("beforeXD/art4mobile.jpg") center center no-repeat;
   background-size: cover;
   width: 150px;
   height: 150px;
-  top: 80%;
-  left: -5%;
+  top: 70%;
+  left: 7%;
   -webkit-box-shadow: -3px 3px 3px black;
           box-shadow: -3px 3px 3px black;
   -webkit-transform: rotateY(10deg) translateZ(-5px);
@@ -909,6 +929,12 @@ h4 {
 @media (min-width: 768px) {
   .ProjectMain {
     display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .ProjectMain2 {
+    right: 0%;
   }
 }
 

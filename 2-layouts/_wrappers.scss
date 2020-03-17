@@ -20,32 +20,32 @@
         z-index: -1;
         width: 100vw;
         height: 100vh;
-        background: url("beforeXD/art3.jpg") center center no-repeat;
+        background: url("beforeXD/art0mobile2.jpg") center center no-repeat;
         background-size: cover;
         filter: contrast(250%) hue-rotate(0deg);
         @keyframes backgroundAnimations {
             0%{
-                background: url("beforeXD/art0.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art0des.jpg") center center no-repeat;
                 background-size: cover;
             }
             20%{
-                background: url("beforeXD/art8.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
                 background-size: cover;
             }
             40%{
-                background: url("beforeXD/art2.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art2des.jpg") center center no-repeat;
                 background-size: cover;
             }
             60%{
-                background: url("beforeXD/art3.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art3des.jpg") center center no-repeat;
                 background-size: cover;
             }
             80%{
-                background: url("beforeXD/art1.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art1des.jpg") center center no-repeat;
                 background-size: cover;
             }
             100%{
-                background: url("beforeXD/art8.jpg") center center no-repeat;
+                background: url("beforeXD/desktop/art8des.jpeg") center center no-repeat;
                 background-size: cover;
             }
         }
@@ -71,6 +71,13 @@
             opacity: 1;
             animation: backgroundAnimations 9s alternate infinite,
                        hueChange 2s alternate infinite;
+            @keyframes hueChange {
+                from{
+                    filter: contrast(250%) hue-rotate(90deg);
+                }to{
+                    filter: contrast(250%) hue-rotate(360deg);
+                }
+            }
         }
     }   
 }

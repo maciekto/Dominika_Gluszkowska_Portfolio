@@ -31,7 +31,7 @@ const pl = {
     projects: "Moje wszystkie projekty",
     contactLink: "Kontakt",
     form: {
-        title: "Wyślij wiadomość tutaj:",
+        title: "Wyślij wiadomość:",
         emailFrom: "Twój email:",
         ms: "Twoja wiadomość",
         btn: "Wyślij"
