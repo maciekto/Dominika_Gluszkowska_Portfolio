@@ -27,6 +27,8 @@
             transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
         }
         &_clicked{
+            box-shadow: 0px 0px 10px 5px black;
+            border-radius: 50px;
             cursor: auto;
             width: 90vw;
             height: 90vh;
@@ -40,10 +42,12 @@
             }
         }
         &-Inner{
+            border-radius: 50px;
             position: relative;
             height: 100%;
             scroll-behavior: smooth;
-            overflow: auto;
+            overflow-y: auto;
+            overflow-x: hidden;
             display: none;
             width: 100%;
             height: 100%;
@@ -59,8 +63,8 @@
             }
         }
         &-Exit{
-            margin-top: 10px;
-            margin-right: 10px;
+            margin-top: 20px;
+            margin-right: 20px;
             cursor: pointer;
             z-index: 70;
             position: fixed;
@@ -91,6 +95,7 @@
             ;
         }
         &-Fade{
+            border-radius: 50px;
             display: none;
             z-index: 1;
             position: fixed;
@@ -100,6 +105,7 @@
             background: rgba($color: #000000, $alpha: 0.6);
         }
         &-Project{
+            border-radius: 20px;
             perspective: 100px;
             perspective-origin: center;
             backface-visibility: visible;
@@ -111,7 +117,7 @@
             &:hover{
                 cursor: pointer;
                 transition: 0.4s;
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
             &Back{
                 //border: 1px solid white;
@@ -146,6 +152,7 @@
             background-size: cover;
             animation: fade 0.4s ease-in 1;
             &_clickShow{
+                
                 z-index: 2;
                 display: block;
                 grid-area: none;
@@ -453,6 +460,15 @@
             "a3 a3 a3"
             ". a10 ."
             ". a10 .";
+        }
+        &-Project{
+            &Title{
+                font-size: 2rem;
+                margin-bottom: 0px;
+            }
+            &Description{
+                font-size: 2rem;
+            }
         }
         &-Project0{
             &_clickShow{

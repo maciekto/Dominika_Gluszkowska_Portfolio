@@ -1295,6 +1295,9 @@ h4 {
             transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
   }
   .ProjectsDesktop_clicked {
+    -webkit-box-shadow: 0px 0px 10px 5px black;
+            box-shadow: 0px 0px 10px 5px black;
+    border-radius: 50px;
     cursor: auto;
     width: 90vw;
     height: 90vh;
@@ -1312,10 +1315,12 @@ h4 {
             transform: scale(1) rotateZ(0deg) translateY(0px) translateX(0px);
   }
   .ProjectsDesktop-Inner {
+    border-radius: 50px;
     position: relative;
     height: 100%;
     scroll-behavior: smooth;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     display: none;
     width: 100%;
     height: 100%;
@@ -1341,8 +1346,8 @@ h4 {
     }
   }
   .ProjectsDesktop-Exit {
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
     cursor: pointer;
     z-index: 70;
     position: fixed;
@@ -1368,6 +1373,7 @@ h4 {
         grid-template-areas: "a10 a8 a8 a2 a1" "a10 a8 a8 a0 a0" "a10 a8 a8 a0 a0" "a9  a5 a7 a0 a0" "a6  a5 a7 a3 a3" "a6  a4 a7 a3 a3" ".  a4 . a3 a3";
   }
   .ProjectsDesktop-Fade {
+    border-radius: 50px;
     display: none;
     z-index: 1;
     position: fixed;
@@ -1377,6 +1383,7 @@ h4 {
     background: rgba(0, 0, 0, 0.6);
   }
   .ProjectsDesktop-Project {
+    border-radius: 20px;
     -webkit-perspective: 100px;
             perspective: 100px;
     -webkit-perspective-origin: center;
@@ -1401,8 +1408,8 @@ h4 {
     cursor: pointer;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .ProjectsDesktop-ProjectBack {
     -webkit-box-shadow: 10px 10px 10px black;
@@ -1819,6 +1826,13 @@ h4 {
         grid-template-rows: repeat(13, 250px);
     grid-gap: 2px;
         grid-template-areas: "a0 a0 a7" "a0 a0 a7" "a0 a0 a4" "a1 a9 a4" "a1 a8 a8" "a6 a8 a8" "a6 a8 a8" "a2 a2 a5" "a2 a2 a5" "a3 a3 a3" "a3 a3 a3" ". a10 ." ". a10 .";
+  }
+  .ProjectsDesktop-ProjectTitle {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+  .ProjectsDesktop-ProjectDescription {
+    font-size: 2rem;
   }
   .ProjectsDesktop-Project0_clickShow {
     width: 60vw;
