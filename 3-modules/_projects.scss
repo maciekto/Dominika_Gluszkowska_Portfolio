@@ -39,6 +39,9 @@ $project10RotateY: 10deg;
 $project10TranslateZ: -5px; 
 
 .ProjectMain{
+    border-radius: 15px;
+    perspective: 200px;
+    perspective-origin: center;
     position: relative;
     transition: 0.6s;
     background-color: white;
@@ -53,7 +56,7 @@ $project10TranslateZ: -5px;
     justify-content: center;
     flex-direction: column;
     &-Back{
-        
+        border-radius: 10px;
         font-size: 0.4rem;
         transition: inherit;
         display: flex;
