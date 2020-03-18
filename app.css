@@ -1299,7 +1299,7 @@ h4 {
     width: 90vw;
     height: 90vh;
     left: 5vw;
-    bottom: 0px;
+    bottom: 5vh;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     -webkit-transform: rotateZ(0deg);
@@ -1319,7 +1319,7 @@ h4 {
     display: none;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.84);
+    background-color: rgba(0, 0, 0, 0.84);
     opacity: 1;
     -webkit-animation: fade 1s ease-in 1;
             animation: fade 1s ease-in 1;
@@ -1354,6 +1354,7 @@ h4 {
     right: 0;
   }
   .ProjectsDesktop-Grid {
+    position: relative;
     padding: 0px;
     width: 100%;
     height: 100%;
@@ -1361,124 +1362,413 @@ h4 {
     display: grid;
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: (200px)[6];
-        grid-template-rows: repeat(6, 200px);
-    grid-gap: 0px;
-        grid-template-areas: "a10 a8 a8 a2 a1" "a10 a8 a8 a3 a3" "a10 a5 a7 a3 a3" "a6   a5 a7 a0 a0" "a6  a4  a7  a0 a0" "a9  a4  .  a0 a0";
+    -ms-grid-rows: (250px)[7];
+        grid-template-rows: repeat(7, 250px);
+    grid-gap: 2px;
+        grid-template-areas: "a10 a8 a8 a2 a1" "a10 a8 a8 a0 a0" "a10 a8 a8 a0 a0" "a9  a5 a7 a0 a0" "a6  a5 a7 a3 a3" "a6  a4 a7 a3 a3" ".  a4 . a3 a3";
+  }
+  .ProjectsDesktop-Fade {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    grid-area: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
   }
   .ProjectsDesktop-Project {
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
+    -webkit-perspective: 100px;
+            perspective: 100px;
+    -webkit-perspective-origin: center;
+            perspective-origin: center;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ProjectsDesktop-Project:hover {
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .ProjectsDesktop-ProjectBack {
+    -webkit-box-shadow: 10px 10px 10px black;
+            box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    -webkit-animation: fade 6s alternate 1;
+            animation: fade 6s alternate 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    width: 90%;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.84);
+    -webkit-transform: translateZ(-200px) scale(2.7) rotateY(180deg);
+            transform: translateZ(-200px) scale(2.7) rotateY(180deg);
+  }
+  .ProjectsDesktop-ProjectTitle {
+    font-size: 2rem;
+  }
+  .ProjectsDesktop-ProjectDescription {
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
   }
   .ProjectsDesktop-Project0 {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     display: none;
-    -ms-grid-row: 4;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     -ms-grid-column: 4;
     -ms-grid-column-span: 2;
     grid-area: a0;
-    background: url("beforeXD/desktop/art0.jpg") center center no-repeat;
+    background: url("beforeXD/art0mobile2.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project0_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    width: 30vw;
+    height: 85vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 30vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project0_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project0_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project1 {
     display: none;
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     grid-area: a1;
-    background: url("beforeXD/desktop/art1.jpg") center center no-repeat;
+    background: url("beforeXD/art1mobile2.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project1_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    width: 30vw;
+    height: 85vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 30vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project1_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project1_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project2 {
     display: none;
     -ms-grid-row: 1;
     -ms-grid-column: 4;
     grid-area: a2;
-    background: url("beforeXD/desktop/art2.jpg") center center no-repeat;
+    background: url("beforeXD/art2mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project2_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    position: fixed;
+    width: 50vw;
+    height: 80vh;
+    left: 20vw;
+    top: 5vh;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project2_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project2_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project3 {
     display: none;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 4;
     -ms-grid-column-span: 2;
     grid-area: a3;
-    background: url("beforeXD/desktop/art3.jpg") center center no-repeat;
+    background: url("beforeXD/art3mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project3_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    position: fixed;
+    width: 60vw;
+    height: 70vh;
+    left: 15vw;
+    top: 10vh;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project3_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project3_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project4 {
     display: none;
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: a4;
-    background: url("beforeXD/desktop/art4.jpg") center center no-repeat;
+    background: url("beforeXD/art4mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project4_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    width: 30vw;
+    height: 85vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 30vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project4_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project4_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project5 {
     display: none;
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: a5;
-    background: url("beforeXD/desktop/art5.jpg") center center no-repeat;
+    background: url("beforeXD/art5mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project5_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    width: 30vw;
+    height: 85vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 30vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project5_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project5_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project6 {
     display: none;
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: a6;
-    background: url("beforeXD/desktop/art6.jpg") center center no-repeat;
+    background: url("beforeXD/art6mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
   }
+  .ProjectsDesktop-Project6_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    width: 30vw;
+    height: 85vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 30vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project6_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project6_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
   .ProjectsDesktop-Project7 {
     display: none;
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 3;
     -ms-grid-column: 3;
     grid-area: a7;
-    background: url("beforeXD/desktop/art7.jpg") center center no-repeat;
+    background: url("beforeXD/art7mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project7_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    width: 30vw;
+    height: 85vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 30vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project7_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project7_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project8 {
     display: none;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-area: a8;
-    background: url("beforeXD/desktop/art8projects.jpg") center center no-repeat;
+    background: url("beforeXD/art8mobile2.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
   }
+  .ProjectsDesktop-Project8_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    position: fixed;
+    width: 40vw;
+    height: 80vh;
+    left: 25vw;
+    top: 5vh;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project8_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project8_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
   .ProjectsDesktop-Project9 {
     display: none;
-    -ms-grid-row: 6;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: a9;
-    background: url("beforeXD/desktop/art9.jpg") center center no-repeat;
+    background: url("beforeXD/art9mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project9_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    position: fixed;
+    width: 60vw;
+    height: 80vh;
+    left: 20vw;
+    top: 5vh;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project9_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project9_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
   .ProjectsDesktop-Project10 {
     display: none;
@@ -1486,10 +1776,177 @@ h4 {
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: a10;
-    background: url("beforeXD/desktop/art10.jpg") center center no-repeat;
+    background: url("beforeXD/art10mobile.jpg") center center no-repeat;
     background-size: cover;
     -webkit-animation: fade 0.4s ease-in 1;
             animation: fade 0.4s ease-in 1;
+  }
+  .ProjectsDesktop-Project10_clickShow {
+    z-index: 2;
+    display: block;
+    grid-area: none;
+    width: 30vw;
+    height: 85vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 30vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .ProjectsDesktop-Project10_clickShow_turnBack {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+  .ProjectsDesktop-Project10_clickShow_turnBack:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ProjectsDesktop-Grid {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (250px)[13];
+        grid-template-rows: repeat(13, 250px);
+    grid-gap: 2px;
+        grid-template-areas: "a0 a0 a7" "a0 a0 a7" "a0 a0 a4" "a1 a9 a4" "a1 a8 a8" "a6 a8 a8" "a6 a8 a8" "a2 a2 a5" "a2 a2 a5" "a3 a3 a3" "a3 a3 a3" ". a10 ." ". a10 .";
+  }
+  .ProjectsDesktop-Project0_clickShow {
+    width: 60vw;
+    height: 85vh;
+    left: 15vw;
+  }
+  .ProjectsDesktop-Project1_clickShow {
+    width: 60vw;
+    height: 85vh;
+    left: 15vw;
+  }
+  .ProjectsDesktop-Project2_clickShow {
+    width: 70vw;
+    height: 60vh;
+    left: 10vw;
+    top: 15vh;
+  }
+  .ProjectsDesktop-Project3_clickShow {
+    width: 80vw;
+    height: 70vh;
+    left: 5vw;
+    top: 10vh;
+  }
+  .ProjectsDesktop-Project4_clickShow {
+    width: 60vw;
+    height: 85vh;
+    left: 15vw;
+  }
+  .ProjectsDesktop-Project5_clickShow {
+    width: 60vw;
+    height: 85vh;
+    left: 15vw;
+  }
+  .ProjectsDesktop-Project6_clickShow {
+    width: 60vw;
+    height: 85vh;
+    left: 15vw;
+  }
+  .ProjectsDesktop-Project7_clickShow {
+    width: 60vw;
+    height: 85vh;
+    left: 15vw;
+  }
+  .ProjectsDesktop-Project8_clickShow {
+    width: 60vw;
+    height: 60vh;
+    left: 15vw;
+    top: 15vh;
+  }
+  .ProjectsDesktop-Project9_clickShow {
+    width: 80vw;
+    height: 50vh;
+    left: 5vw;
+    top: 20vh;
+  }
+  .ProjectsDesktop-Project10_clickShow {
+    width: 60vw;
+    height: 85vh;
+    left: 15vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .ProjectsDesktop-Grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (300px)[9];
+        grid-template-rows: repeat(9, 300px);
+        grid-template-areas: "a0 a0 a2 a2" "a0 a0 a2 a2" "a0 a0 a7 a10" "a1 a9 a7 a10" "a1 a8 a8 a10" "a4 a8 a8 a5" "a4 a8 a8 a5" "a6 a3 a3 a3" "a6 a3 a3 a3";
+  }
+  .ProjectsDesktop-Project0_clickShow {
+    width: 35vw;
+    height: 85vh;
+    left: 27.5vw;
+  }
+  .ProjectsDesktop-Project1_clickShow {
+    width: 35vw;
+    height: 85vh;
+    left: 27.5vw;
+  }
+  .ProjectsDesktop-Project2_clickShow {
+    width: 65vw;
+    height: 80vh;
+    left: 17.5vw;
+    top: 5vh;
+  }
+  .ProjectsDesktop-Project3_clickShow {
+    width: 70vw;
+    height: 70vh;
+    left: 10vw;
+    top: 10vh;
+  }
+  .ProjectsDesktop-Project4_clickShow {
+    width: 50vw;
+    height: 85vh;
+    left: 20vw;
+  }
+  .ProjectsDesktop-Project5_clickShow {
+    width: 50vw;
+    height: 85vh;
+    left: 20vw;
+  }
+  .ProjectsDesktop-Project6_clickShow {
+    width: 50vw;
+    height: 85vh;
+    left: 20vw;
+  }
+  .ProjectsDesktop-Project7_clickShow {
+    width: 50vw;
+    height: 85vh;
+    left: 20vw;
+  }
+  .ProjectsDesktop-Project8_clickShow {
+    width: 60vw;
+    height: 80vh;
+    left: 15vw;
+    top: 5vh;
+  }
+  .ProjectsDesktop-Project9_clickShow {
+    width: 80vw;
+    height: 70vh;
+    left: 5vw;
+    top: 15vh;
+  }
+  .ProjectsDesktop-Project10_clickShow {
+    width: 50vw;
+    height: 85vh;
+    left: 20vw;
   }
 }
 
