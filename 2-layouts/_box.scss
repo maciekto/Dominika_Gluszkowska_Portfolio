@@ -1,6 +1,7 @@
 .Box{
     width: 70vw;
     height: 300px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +10,7 @@
     
     &-Inner{
         height: 200px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -95,24 +97,37 @@
 
 @media (min-width: 768px){
     .Box{
-        height: 150px;
+        
+        min-height: 120px;
+        height: 25vh;
         margin: 0;
         &-Inner{
-            
-            height: 150px;
+            border-radius: 30px;
+            min-height: 120px;
+            height: 25vh;
         }
         &-Description{
             margin: 0;
         }
         &-Title{
+            
         }
     }
     .Contact{
-        height: 350px;
+        //height: 350px;
+        min-height: 250px;
+        height: 55vh;
+        &-Inner{
+            height: 25vh;
+        }
     }
     .About{
+        min-height: 120px;
+        height: 25vh;
         &-Inner{
             width: calc(70vw - 100px);
+            height: 30vh;
+            min-height: 120px;
             font-size: 1.4rem;
             padding: 0 50px;
         }
@@ -127,9 +142,40 @@
         display: none;
     }
     .BoxLink{
+        border-radius: 30px;
         padding: 5px;
-        height: 150px;
+        height: 15vh;
         justify-content: center;
+    }
+    .BoxLink2{
+        border-radius: 30px;
+    }
+}
+@media (min-width: 1024px){
+    .About{
+        &-Inner{
+            font-size: 1.7rem;
+        }
+    }
+    .Offer{
+        &-Description{
+            font-size: 1.7rem;
+        }
+    }
+}
+@media (min-width: 1440px){
+    .About{
+        &-Inner{
+            font-size: 2rem;
+        }
+    }
+    .Offer{
+        &-Description{
+            font-size: 2rem;
+        }
+    }
+    .ContactLink{
+            font-size: 3rem;
     }
 }
 

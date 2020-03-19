@@ -3,6 +3,7 @@
 }
 @media (min-width: 768px){
     .ProjectsDesktop{
+        border-radius: 10%;
         display: block;
         cursor: pointer;
         z-index: 60;
@@ -27,8 +28,8 @@
             transform: scale(2) rotateZ(45deg) translateY(-20px) translateX(-20px);
         }
         &_clicked{
-            box-shadow: 0px 0px 10px 5px black;
-            border-radius: 50px;
+            box-shadow: 0px 0px 10px 0px black;
+            border-radius: 40px;
             cursor: auto;
             width: 90vw;
             height: 90vh;
@@ -42,7 +43,7 @@
             }
         }
         &-Inner{
-            border-radius: 50px;
+            border-radius: 40px;
             position: relative;
             height: 100%;
             scroll-behavior: smooth;

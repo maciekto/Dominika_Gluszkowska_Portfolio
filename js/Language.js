@@ -26,7 +26,7 @@ const pl = {
     },
     offer: {
         title: "Co mogę zaoferować",
-        description: "- ilustracje -<br />- plakaty -<br />- ulotki -<br />- wizytówki -<br />- przygotowywanie projektu do druku -<br />- collage art -"
+        description: "- ilustracje - plakaty -<br />- ulotki - wizytówki -<br />- przygotowywanie projektu do druku -<br />- collage art -"
     },
     projects: "Moje wszystkie projekty",
     contactLink: "Kontakt",
@@ -63,7 +63,7 @@ const eng = {
     },
     offer: {
         title: "What can i offer?",
-        description: "- ilustrations -<br />- posters -<br />- leaflets -<br />- business cards -<br />- preparing projects for printing -<br />- collage art -"
+        description: "- ilustrations - posters -<br />- leaflets - business cards -<br />- preparing projects for printing -<br />- collage art -"
     },
     projects: "Vide all my projects here",
     contactLink: "Contact",
