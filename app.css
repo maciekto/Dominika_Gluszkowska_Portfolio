@@ -652,6 +652,24 @@ a, a:visited, a:focus, a:active {
   font-size: 1.2rem;
 }
 
+@media (min-width: 1024px) {
+  .Form {
+    font-size: 1.3rem;
+  }
+  .Form-Btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Form {
+    font-size: 1.5rem;
+  }
+  .Form-Btn {
+    font-size: 1.5rem;
+  }
+}
+
 ul {
   width: 20vw;
   height: 30px;
@@ -1316,28 +1334,51 @@ h4 {
 
 @media (min-width: 768px) {
   .ProjectsDesktop {
-    border-radius: 10%;
+    border-radius: 10px;
     display: block;
     cursor: pointer;
     z-index: 60;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     background-color: rgba(255, 255, 255, 0.84);
     position: absolute;
     bottom: -30px;
     -webkit-box-shadow: 0px 0px 6px black;
             box-shadow: 0px 0px 6px black;
+    -webkit-animation: neon 2s alternate infinite;
+            animation: neon 2s alternate infinite;
     -webkit-transform: rotateZ(45deg);
             transform: rotateZ(45deg);
-    left: 46.7vw;
+    left: 45.5vw;
+  }
+  @-webkit-keyframes neon {
+    0% {
+      -webkit-box-shadow: 0px 0px 20px 0px #f5d300;
+              box-shadow: 0px 0px 20px 0px #f5d300;
+    }
+    100% {
+      -webkit-box-shadow: 0px 0px 20px 0px black;
+              box-shadow: 0px 0px 20px 0px black;
+    }
+  }
+  @keyframes neon {
+    0% {
+      -webkit-box-shadow: 0px 0px 20px 0px #f5d300;
+              box-shadow: 0px 0px 20px 0px #f5d300;
+    }
+    100% {
+      -webkit-box-shadow: 0px 0px 20px 0px black;
+              box-shadow: 0px 0px 20px 0px black;
+    }
   }
   .ProjectsDesktop-Title {
-    font-size: 10px;
-    -webkit-transform: rotateZ(-45deg) translateX(-28px) translateY(20px);
-            transform: rotateZ(-45deg) translateX(-28px) translateY(20px);
-    width: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    -webkit-transform: rotateZ(-45deg) translateX(-39px) translateY(23px);
+            transform: rotateZ(-45deg) translateX(-39px) translateY(23px);
+    width: 150px;
     height: auto;
   }
   .ProjectsDesktop:hover {
@@ -1425,7 +1466,7 @@ h4 {
         grid-template-areas: "a10 a8 a8 a2 a1" "a10 a8 a8 a0 a0" "a10 a8 a8 a0 a0" "a9  a5 a7 a0 a0" "a6  a5 a7 a3 a3" "a6  a4 a7 a3 a3" ".  a4 . a3 a3";
   }
   .ProjectsDesktop-Fade {
-    border-radius: 50px;
+    border-radius: 40px;
     display: none;
     z-index: 1;
     position: fixed;
@@ -2066,6 +2107,32 @@ input:disabled {
     transition: 0.4s;
     -webkit-box-shadow: 0px 0px 4px black;
             box-shadow: 0px 0px 4px black;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Form-LabelEmailFrom_focus {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    top: -20px;
+  }
+  .Form-LabelTextArea_focus {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    top: -20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Form-LabelEmailFrom_focus {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    top: -25px;
+  }
+  .Form-LabelTextArea_focus {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    top: -25px;
   }
 }
 

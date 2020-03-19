@@ -1,5 +1,6 @@
 // create needed variables
 const ProjectDesktopMainDiv = document.querySelector('.ProjectsDesktop');
+const ProjectDesktopMainDivMobile = document.querySelector('.Projects');
 const ProjectsDesktopTitle = document.querySelector('.ProjectsDesktop-Title');
 const ProjectsDesktopInner = document.querySelector('.ProjectsDesktop-Inner');
 

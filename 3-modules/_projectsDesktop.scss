@@ -3,23 +3,33 @@
 }
 @media (min-width: 768px){
     .ProjectsDesktop{
-        border-radius: 10%;
+        border-radius: 10px;
         display: block;
         cursor: pointer;
         z-index: 60;
         transition: 0.4s;
-        width: 90px;
-        height: 90px;
+        width: 120px;
+        height: 120px;
         background-color: rgba($color: #ffffff, $alpha: 0.84);
         position: absolute;
         bottom: -30px;
         box-shadow: 0px 0px 6px black;
+        animation: neon 2s alternate infinite;
+
+        @keyframes neon {
+            0%{
+                box-shadow: 0px 0px 20px 0px #f5d300;
+            }100%{
+                box-shadow: 0px 0px 20px 0px black;
+            }
+        }
         transform: rotateZ(45deg);
-        left:46.7vw;
+        left:45.5vw;
         &-Title{
-            font-size: 10px;
-            transform: rotateZ(-45deg) translateX(-28px) translateY(20px);
-            width: 100px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transform: rotateZ(-45deg) translateX(-39px) translateY(23px);
+            width: 150px;
             height: auto;
             
         }
@@ -96,7 +106,7 @@
             ;
         }
         &-Fade{
-            border-radius: 50px;
+            border-radius: 40px;
             display: none;
             z-index: 1;
             position: fixed;
@@ -555,6 +565,7 @@
     }
 }
 @media (min-width: 1024px)and(max-width: 1440px){
+
     .ProjectsDesktop{
         &-Grid{
             grid-template-columns: repeat(4, 1fr);
@@ -653,3 +664,4 @@
         }
     }
 }
+

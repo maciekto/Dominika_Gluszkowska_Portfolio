@@ -43,6 +43,23 @@
         font-size: 1.2rem;
     }
 }
+@media (min-width: 1024px){
+    .Form{
+        font-size: 1.3rem;
+        &-Btn{
+            font-size: 1.4rem;
+        }
+    }
+    
+}
+@media (min-width: 1440px){
+    .Form{
+        font-size: 1.5rem;
+        &-Btn{
+            font-size: 1.5rem;
+        }
+    }
+}
 
 
 
