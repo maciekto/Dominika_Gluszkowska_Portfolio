@@ -30,6 +30,9 @@
     &-Title{
         transition: 0.4s;
     }
+    &-Desktop{
+        display: none;
+    }
 }
 .ProjectMainTutorial{
     border-radius: 10%;
@@ -64,6 +67,7 @@
         height: 50vh;
         box-shadow: 0px 0px 10px black;
     }
+    
     &-Back{
         font-size: 0.4rem;
         transition: inherit;
@@ -107,4 +111,91 @@
 }
 .ProjectMainTutorial_opacity_0{
     opacity: 0;
+}
+@media (min-width: 768px){
+    .ProjectMainTutorial{
+        display: none;
+    }
+    .Tutorial{
+        &-Exit{
+            top: 20px;
+            left: 20px;
+            bottom: none;
+            cursor: pointer;
+        }
+        &-Mobile{
+            display: none;
+        }
+        &-Desktop{
+            display: flex;
+        }
+        &-Message{
+            font-weight: bold;
+            transition: 0.4s;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            transform: translateY(15vh) translateX(12vw);
+        }
+        &-Arrow{
+            transition: 0.4s;
+            color: black;
+            transform: rotateZ(180deg) translateY(20px) translateX(-20vw);
+        }
+        &-Title{
+            transition: 0.4s;
+        }
+    }
+    .Message_moveDesktop1{
+        transform: translateY(75vh) translateX(10vw);
+    }
+    .Arrow_moveDesktop1{
+        transform: rotateZ(0deg) rotateY(180deg) translateY(20px) translateX(-20vw);
+    }
+}
+@media (min-width: 1024px){
+    .Tutorial{
+        &-Arrow{
+            transition: 0.4s;
+            color: black;
+            transform: rotateZ(180deg) translateY(20px) translateX(-25vw);
+        }
+        &-Message{
+            font-weight: bold;
+            transition: 0.4s;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            transform: translateY(15vh) translateX(0vw);
+        }
+    }
+    .Message_moveDesktop1{
+        transform: translateY(75vh) translateX(5vw);
+    }
+    .Arrow_moveDesktop1{
+        transform: rotateZ(0deg) rotateY(180deg) translateY(20px) translateX(-23vw);
+    }
+}
+@media (min-width: 1440px){
+    .Tutorial{
+        &-Arrow{
+            transition: 0.4s;
+            color: black;
+            transform: rotateZ(180deg) translateY(20px) translateX(-26vw);
+        }
+        &-Message{
+            font-weight: bold;
+            transition: 0.4s;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            transform: translateY(15vh) translateX(-3vw);
+        }
+    }
+    .Message_moveDesktop1{
+        transform: translateY(75vh) translateX(0vw);
+    }
+    .Arrow_moveDesktop1{
+        transform: rotateZ(0deg) rotateY(180deg) translateY(20px) translateX(-27vw);
+    }
 }
