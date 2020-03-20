@@ -1,13 +1,12 @@
 .Wrapper{
     width: 100vw;
     height: 100%;
-    
     &-Inner{
         width: inherit;
         height: inherit;
         display: flex;
         flex-direction: column;
-        background: rgba($color: #FFFFFF, $alpha: .2)
+        background: rgba($color: #FFFFFF, $alpha: .2);
        
     }
     &::after{

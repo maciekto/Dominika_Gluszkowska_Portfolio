@@ -441,6 +441,38 @@ a, a:visited, a:focus, a:active {
 .Projects {
   margin-top: 30px;
   z-index: 45;
+  -webkit-animation: glow 1.2s alternate infinite;
+          animation: glow 1.2s alternate infinite;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 5px black;
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 5px #880000;
+            box-shadow: 0px 0px 5px #880000;
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 5px black;
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 5px #880000;
+            box-shadow: 0px 0px 5px #880000;
+  }
 }
 
 .Offer {
@@ -535,7 +567,7 @@ a, a:visited, a:focus, a:active {
   }
   .Contact {
     min-height: 250px;
-    height: 55vh;
+    height: 45vh;
   }
   .Contact-Inner {
     height: 25vh;
@@ -1340,8 +1372,8 @@ h4 {
     z-index: 60;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     background-color: rgba(255, 255, 255, 0.84);
     position: absolute;
     bottom: -30px;
@@ -1355,29 +1387,29 @@ h4 {
   }
   @-webkit-keyframes neon {
     0% {
-      -webkit-box-shadow: 0px 0px 20px 0px #f5d300;
-              box-shadow: 0px 0px 20px 0px #f5d300;
+      -webkit-box-shadow: 0px 0px 5px 0px red;
+              box-shadow: 0px 0px 5px 0px red;
     }
     100% {
-      -webkit-box-shadow: 0px 0px 20px 0px black;
-              box-shadow: 0px 0px 20px 0px black;
+      -webkit-box-shadow: 0px 0px 15px 2px black;
+              box-shadow: 0px 0px 15px 2px black;
     }
   }
   @keyframes neon {
     0% {
-      -webkit-box-shadow: 0px 0px 20px 0px #f5d300;
-              box-shadow: 0px 0px 20px 0px #f5d300;
+      -webkit-box-shadow: 0px 0px 5px 0px red;
+              box-shadow: 0px 0px 5px 0px red;
     }
     100% {
-      -webkit-box-shadow: 0px 0px 20px 0px black;
-              box-shadow: 0px 0px 20px 0px black;
+      -webkit-box-shadow: 0px 0px 15px 2px black;
+              box-shadow: 0px 0px 15px 2px black;
     }
   }
   .ProjectsDesktop-Title {
-    font-size: 1.5rem;
+    font-size: 1.40rem;
     font-weight: bold;
-    -webkit-transform: rotateZ(-45deg) translateX(-39px) translateY(23px);
-            transform: rotateZ(-45deg) translateX(-39px) translateY(23px);
+    -webkit-transform: rotateZ(-45deg) translateX(-37px) translateY(17px);
+            transform: rotateZ(-45deg) translateX(-37px) translateY(17px);
     width: 150px;
     height: auto;
   }
@@ -2055,6 +2087,371 @@ h4 {
     height: 85vh;
     left: 20vw;
   }
+}
+
+.ProjectsMobile {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  z-index: 100;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ProjectsMobile-Item {
+  width: 100vw;
+  height: 90vh;
+  -webkit-filter: contrast(130%);
+          filter: contrast(130%);
+}
+
+.ProjectsMobile-Exit {
+  z-index: 101;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 45vw;
+  background: url("beforeXD/exitBtn.png") center center no-repeat;
+  background-size: cover;
+}
+
+.Item0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Item0-Image {
+  width: 100%;
+  height: 85%;
+  background: url("beforeXD/art0mobile2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item0-Description {
+  width: 100%;
+  height: 15%;
+  background-color: white;
+}
+
+.Item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Item1-Image {
+  width: 100%;
+  height: 75%;
+  background: url("beforeXD/art1mobile2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item1-Description {
+  width: 100%;
+  height: 25%;
+  background-color: white;
+}
+
+.Item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70vh;
+}
+
+.Item2-Image {
+  width: 100%;
+  height: 70%;
+  background: url("beforeXD/art2mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item2-Description {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+}
+
+.Item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60vh;
+}
+
+.Item3-Image {
+  width: 100%;
+  height: 60%;
+  background: url("beforeXD/art3mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item3-Description {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+}
+
+.Item4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Item4-Image {
+  width: 100%;
+  height: 75%;
+  background: url("beforeXD/art4mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item4-Description {
+  width: 100%;
+  height: 25%;
+  background-color: white;
+}
+
+.Item5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Item5-Image {
+  width: 100%;
+  height: 75%;
+  background: url("beforeXD/art5mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item5-Description {
+  width: 100%;
+  height: 25%;
+  background-color: white;
+}
+
+.Item6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Item6-Image {
+  width: 100%;
+  height: 80%;
+  background: url("beforeXD/art6mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item6-Description {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+}
+
+.Item7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Item7-Image {
+  width: 100%;
+  height: 80%;
+  background: url("beforeXD/art7mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item7-Description {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+}
+
+.Item8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70vh;
+}
+
+.Item8-Image {
+  width: 100%;
+  height: 75%;
+  background: url("beforeXD/art8mobile2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item8-Description {
+  width: 100%;
+  height: 25%;
+  background-color: white;
+}
+
+.Item9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60vh;
+}
+
+.Item9-Image {
+  width: 100%;
+  height: 60%;
+  background: url("beforeXD/art9mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item9-Description {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+}
+
+.Item10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+.Item10-Image {
+  width: 100%;
+  height: 80%;
+  background: url("beforeXD/art10mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Item10-Description {
+  width: 100%;
+  height: 20%;
+  background-color: white;
 }
 
 /* STATES */
