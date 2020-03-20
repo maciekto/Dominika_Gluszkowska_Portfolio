@@ -77,13 +77,13 @@ function previewTutorial(){
                     TutorialArrow.style.cssText = "display: none";
                     TutorialMainDiv.classList.toggle('ProjectMainTutorial_opacity_0');
                     
-                }, 2500);
+                }, 4000);
                 setTimeout(() => {
                     TutorialMessage.classList.toggle('Tutorial-Message_Move5');
                     
                     TutorialMainDiv.style.cssText = "display: none";
                     
-                }, 3000);
+                }, 4500);
             }
 
 //PROJECTS 

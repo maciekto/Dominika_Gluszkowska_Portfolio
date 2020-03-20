@@ -33,6 +33,11 @@ a, a:visited, a:focus, a:active{
         font-size: 6px;
     }
 }
+@media only screen and (max-width: 300px){
+    :root{
+        font-size: 3px;
+    }
+}
 
 @media (min-width: 768px){
     :root{
