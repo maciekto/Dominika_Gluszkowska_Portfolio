@@ -10,11 +10,12 @@
     justify-content: center;
     left: 0;
     top: 0;
-    z-index: 52;
+    z-index: 51;
     width: 100vw;
     height: 100vh;
-    background-color: rgba($color: #c0c0c0, $alpha: 0.84);
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
     &-Message{
+        font-weight: bold;
         transition: 0.4s;
         display: flex;
         align-items: center;
@@ -24,13 +25,14 @@
     &-Arrow{
         transition: 0.4s;
         color: black;
-        transform: rotateY(180deg) translateY(20px) translateX(10px);
+        transform: rotateY(180deg) translateY(20px) translateX(-12vw);
     }
     &-Title{
         transition: 0.4s;
     }
 }
 .ProjectMainTutorial{
+    border-radius: 10%;
     position: relative;
     transition: 0.6s;
     background-color: white;
@@ -44,7 +46,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url("beforeXD/art3.jpg") center center no-repeat;
+    background: url("beforeXD/art8mobile2.jpg") center center no-repeat;
     background-size: cover;
     width: 100px;
     height: 130px;
@@ -52,6 +54,16 @@
     left: 13%;
     transform:rotateY(20deg);
     box-shadow: -3px 3px 3px  black;
+    
+    &_clicked{
+        z-index: 55;
+        top: 25vh;
+        left: 10vw;
+        transform: rotateY(0deg) scaleX(1) scaleY(1);
+        width: 80vw;
+        height: 50vh;
+        box-shadow: 0px 0px 10px black;
+    }
     &-Back{
         font-size: 0.4rem;
         transition: inherit;
@@ -62,21 +74,36 @@
         justify-content: center;
         transform: rotateY(180deg);
     }
+    &-Exit{
+        z-index: 55;
+    }
 }
 .Tutorial-Message_Move1{
     transition: 0.4s;
-   transform: translateY(75vh) translateX(10vw);
+   transform: translateY(84vh) translateX(10vw);
 }
 .Tutorial-Message_Move2{
     transition: 0.4s;
-   transform: translateY(5vh) translateX(20vw);
+   transform: translateY(15vh) translateX(15vw);
+}
+.Tutorial-Message_Move5{
+    opacity: 0;
 }
 .Tutorial-Message_Move3{
-    opacity: 0;
+    transition: 0.4s;
+    transform: translateY(30vh) translateX(-15vw);
+}
+.Tutorial-Message_Move4{
+    transition: 0.4s;
+    transform: translateY(65vh) translateX(0vw);
 }
 .Tutorial-Arrow_Move1{
     transition: 0.4s;
-    transform: rotateY(180deg) rotateX(180deg) translateY(20px) translateX(10px);
+    transform: rotateY(180deg) rotateX(180deg) translateY(20px) translateX(-10vw);
+}
+.Tutorial-Arrow_Move2{
+    transition: 0.4s;
+    transform: rotateY(0deg) rotateX(0deg) translateY(20px) translateX(75vw);
 }
 .ProjectMainTutorial_opacity_0{
     opacity: 0;

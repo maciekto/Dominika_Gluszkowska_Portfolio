@@ -168,7 +168,7 @@ function plChange(){
     NavbarMobileContactLang.innerHTML = pl.navBar.mobile.contact;
 
     ProjectsDesktop.innerHTML = pl.projects;
-    ProjectsMobile.innerHTML = eng.projects;
+    ProjectsMobile.innerHTML = pl.projects;
 
     TitleDesktopLang.innerHTML = pl.desktopTitle;
     TitleMobileOneLang.innerHTML = pl.mobileTitle.one;

@@ -7,23 +7,35 @@ const TutorialMainDiv = document.querySelector('.Tutorial');
 const TutorialMessage = document.querySelector('.Tutorial-Message');
 const TutorialArrow = document.querySelector('.Tutorial-Arrow');
 const TutorialTitle = document.querySelector('.Tutorial-Title');
-TutorialTitle.innerHTML = "Click on card to see project";
-
+const TutorialNavBarLanguage = document.querySelector('.NavBar-Language');
+const TutorialExit = document.querySelector('.Tutorial-Exit');
+TutorialExit.style.bottom = "10vh";
+TutorialTitle.innerHTML = "| Click on card to see project | <br />| Kliknij by zobaczyć pracę |";
+TutorialExit.addEventListener('click', ForceExit);
+    function ForceExit(){
+        TutorialMainDiv.classList.toggle('ProjectMainTutorial_opacity_0');
+        TutorialMainDiv.style.height = '0vh';
+        setTimeout(() => {
+            TutorialMainDiv.style.cssText = "display: none";
+        }, 500)
+    }
 function previewTutorial(){
     
-    
+    TutorialExit.style.bottom = "4vh";
     TUTORIAL.removeEventListener('click', previewTutorial);
+    TUTORIAL.classList.toggle('ProjectMainTutorial_clicked');
     TutorialMessage.classList.toggle('Tutorial-Message_Move1');
     TutorialArrow.classList.toggle('Tutorial-Arrow_Move1');
-    TutorialTitle.innerHTML = "Click second time to see the story";
+    TutorialTitle.innerHTML = "| Click second time to see the story |<br />| Kliknij drugi raz by zobaczyć opis |";
     
-    removeClasses();
+    //removeClasses();
     this.classList.toggle('ProjectMain_clicked_left');
     this.addEventListener('click', previewBackTutorial);
-}
+}   
     function previewBackTutorial(){
+        TutorialExit.style.bottom = "10vh";
         TUTORIAL.removeEventListener('click', previewBackTutorial);
-        TutorialTitle.innerHTML = "One more time to exit";
+        TutorialTitle.innerHTML = "| One more time to exit | <br /> | Jeszcze raz aby wyjść |";
         TutorialArrow.classList.toggle('Tutorial-Arrow_Move1');
         BackTutorial.classList.toggle('ProjectMain-Back_visible');
         TutorialMessage.classList.toggle('Tutorial-Message_Move1');
@@ -32,26 +44,47 @@ function previewTutorial(){
         this.classList.toggle('ProjectMain_back');
         
 
-        this.addEventListener('click', previewReturnTutorial);  
+        this.addEventListener('click', previewLanguageTutorial);  
     }
-        function previewReturnTutorial(){
+        function previewLanguageTutorial(){
+            this.removeEventListener('click', previewLanguageTutorial);
+            TutorialArrow.classList.toggle('Tutorial-Arrow_Move1');
+            TutorialArrow.classList.toggle('Tutorial-Arrow_Move2');
             TutorialMessage.classList.toggle('Tutorial-Message_Move2');
-            setTimeout(() => {
-                TutorialMessage.classList.toggle('Tutorial-Message_Move3');
-                TUTORIAL.classList.toggle('ProjectMainTutorial_opacity_0');
-                
-            }, 100);
-            setTimeout(() => {
-                TutorialMainDiv.classList.toggle('ProjectMainTutorial_opacity_0');
-            }, 700);
-            setTimeout(() => {
-                TutorialMainDiv.style.cssText = "display: none";
-            }, 800);
-            TUTORIAL.removeEventListener('click', previewReturnTutorial);
-            this.classList.toggle('ProjectMain_back');
-            this.classList.toggle('ProjectMain_clicked_left')
+            TutorialMessage.classList.toggle('Tutorial-Message_Move3');
+            TUTORIAL.classList.toggle('ProjectMainTutorial_opacity_0');
+            TutorialTitle.innerHTML = "| Click here to change language | <br /> | Kliknij tutaj aby zmienić język |";
+            TUTORIAL.classList.toggle('ProjectMain_back');
+            TUTORIAL.classList.toggle('ProjectMainTutorial_clicked')
             BackTutorial.classList.toggle('ProjectMain-Back_visible'); 
-        };
+
+            TutorialNavBarLanguage.addEventListener('click', ALLprojectsTutorial);
+        }
+            function ALLprojectsTutorial(){
+                TutorialNavBarLanguage.removeEventListener('click', ALLprojectsTutorial);
+                TutorialTitle.innerHTML = "| Click here to see all projects | <br /> | Zobacz wszytskie prace |";
+                TutorialArrow.classList.toggle('Tutorial-Arrow_Move2');
+                TutorialArrow.classList.toggle('Tutorial-Arrow_Move1');
+                TutorialMessage.classList.toggle('Tutorial-Message_Move3');
+                TutorialMessage.classList.toggle('Tutorial-Message_Move4');
+                TutorialExit.style.bottom = "12vh";
+
+                TutorialMainDiv.style.height = "75vh";
+                setTimeout(() => {
+                    TutorialMainDiv.style.height = "0vh";
+                    TutorialMessage.classList.toggle('Tutorial-Message_Move4');
+                    TutorialTitle.innerHTML = "START BROWSING!";
+                    TutorialArrow.style.cssText = "display: none";
+                    TutorialMainDiv.classList.toggle('ProjectMainTutorial_opacity_0');
+                    
+                }, 2500);
+                setTimeout(() => {
+                    TutorialMessage.classList.toggle('Tutorial-Message_Move5');
+                    
+                    TutorialMainDiv.style.cssText = "display: none";
+                    
+                }, 3000);
+            }
 
 //PROJECTS 
 
