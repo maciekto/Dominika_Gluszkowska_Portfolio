@@ -1,5 +1,6 @@
 /* BASE CSS FILES */
 :root {
+  cursor: context-menu;
   font-size: 10px;
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
@@ -21,7 +22,7 @@ body {
 a, a:visited, a:focus, a:active {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -433,8 +434,8 @@ a, a:visited, a:focus, a:active {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     color: black;
-    -webkit-transform: rotateZ(180deg) translateY(20px) translateX(-25vw);
-            transform: rotateZ(180deg) translateY(20px) translateX(-25vw);
+    -webkit-transform: rotateZ(180deg) translateY(20px) translateX(-23vw);
+            transform: rotateZ(180deg) translateY(20px) translateX(-23vw);
   }
   .Tutorial-Message {
     font-weight: bold;
@@ -449,12 +450,12 @@ a, a:visited, a:focus, a:active {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -webkit-transform: translateY(15vh) translateX(0vw);
-            transform: translateY(15vh) translateX(0vw);
+    -webkit-transform: translateY(15vh) translateX(4vw);
+            transform: translateY(15vh) translateX(4vw);
   }
   .Message_moveDesktop1 {
-    -webkit-transform: translateY(75vh) translateX(5vw);
-            transform: translateY(75vh) translateX(5vw);
+    -webkit-transform: translateY(75vh) translateX(8vw);
+            transform: translateY(75vh) translateX(8vw);
   }
   .Arrow_moveDesktop1 {
     -webkit-transform: rotateZ(0deg) rotateY(180deg) translateY(20px) translateX(-23vw);
@@ -627,8 +628,8 @@ a, a:visited, a:focus, a:active {
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    -webkit-box-shadow: 0px 0px 5px #880000;
-            box-shadow: 0px 0px 5px #880000;
+    -webkit-box-shadow: 0px 0px 5px rgba(136, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px rgba(136, 0, 0, 0.2);
   }
 }
 
@@ -642,8 +643,8 @@ a, a:visited, a:focus, a:active {
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    -webkit-box-shadow: 0px 0px 5px #880000;
-            box-shadow: 0px 0px 5px #880000;
+    -webkit-box-shadow: 0px 0px 5px rgba(136, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px rgba(136, 0, 0, 0.2);
   }
 }
 
@@ -1559,8 +1560,8 @@ h4 {
   }
   @-webkit-keyframes neon {
     0% {
-      -webkit-box-shadow: 0px 0px 5px 0px red;
-              box-shadow: 0px 0px 5px 0px red;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.2);
+              box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.2);
     }
     100% {
       -webkit-box-shadow: 0px 0px 15px 2px black;
@@ -1569,8 +1570,8 @@ h4 {
   }
   @keyframes neon {
     0% {
-      -webkit-box-shadow: 0px 0px 5px 0px red;
-              box-shadow: 0px 0px 5px 0px red;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.2);
+              box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.2);
     }
     100% {
       -webkit-box-shadow: 0px 0px 15px 2px black;
@@ -2264,6 +2265,8 @@ h4 {
 }
 
 .ProjectsMobile {
+  -webkit-transition: 1s;
+  transition: 1s;
   position: relative;
   width: 100vw;
   height: 100%;
@@ -2284,6 +2287,30 @@ h4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-animation: openProjects 1s alternate 1;
+          animation: openProjects 1s alternate 1;
+}
+
+@-webkit-keyframes openProjects {
+  from {
+    height: 0vh;
+    opacity: 0;
+  }
+  to {
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes openProjects {
+  from {
+    height: 0vh;
+    opacity: 0;
+  }
+  to {
+    height: 100vh;
+    opacity: 1;
+  }
 }
 
 .ProjectsMobile-Item {

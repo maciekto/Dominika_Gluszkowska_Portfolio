@@ -6,12 +6,24 @@ ShowProjects.addEventListener('click', SHOW);
 
 function SHOW(){
     ShowProjects.removeEventListener('click', SHOW);
-    MobileWrapper.style.cssText = 'display: none';
+    setTimeout(() => {
+        MobileWrapper.style.cssText = 'display: none';
+    },1000);
+    
     MobileWidget.style.cssText = 'display: flex';
     ExitProjects.addEventListener('click', Exit);
 }
 function Exit(){
     MobileWrapper.style.cssText = 'display: flex';
-    MobileWidget.style.cssText = 'display: none';
-    ShowProjects.addEventListener('click', SHOW);
+    MobileWidget.style.height = '0vh';
+    MobileWidget.style.opacity = '0';
+    
+    
+    setTimeout(()=>{
+       
+        MobileWidget.style.cssText = 'display: none';
+        ShowProjects.addEventListener('click', SHOW);
+    },800);
+    
+    
 }

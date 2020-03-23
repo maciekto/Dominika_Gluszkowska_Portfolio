@@ -18,7 +18,7 @@
 
         @keyframes neon {
             0%{
-                box-shadow: 0px 0px 5px 0px red;
+                box-shadow: 0px 0px 5px 0px rgba($color: #FF0000, $alpha: 0.2);
             }100%{
                 box-shadow: 0px 0px 15px 2px black;
             }

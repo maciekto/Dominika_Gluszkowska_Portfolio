@@ -48,7 +48,7 @@
             box-shadow: 0px 0px 5px black;
         }100%{
             transform: scale(1.05);
-            box-shadow: 0px 0px 5px #880000;
+            box-shadow: 0px 0px 5px rgba($color: #880000, $alpha: 0.2);
         }
     }
 }

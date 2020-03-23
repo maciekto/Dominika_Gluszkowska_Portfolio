@@ -1,5 +1,5 @@
 .ProjectsMobile {
-
+    transition: 1s;
     position: relative;
     width: 100vw;
     height: 100%;
@@ -13,6 +13,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    animation: openProjects 1s alternate 1;
+    @keyframes openProjects {
+        from{
+            height: 0vh;
+            opacity: 0;
+        }to{
+            height: 100vh;
+            opacity: 1;
+        }
+    }
     &-Item{
         //border-bottom: 4px solid black;
         //margin-top: 6vh;
