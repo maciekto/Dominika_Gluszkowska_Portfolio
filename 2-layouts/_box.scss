@@ -113,7 +113,7 @@
         height: 25vh;
         margin: 0;
         &-Inner{
-            border-radius: 30px;
+            //border-radius: 30px;
             min-height: 120px;
             height: 25vh;
         }
@@ -153,13 +153,13 @@
         display: none;
     }
     .BoxLink{
-        border-radius: 30px;
+        //border-radius: 30px;
         padding: 5px;
         height: 15vh;
         justify-content: center;
     }
     .BoxLink2{
-        border-radius: 30px;
+        //border-radius: 30px;
     }
 }
 @media (min-width: 1024px){

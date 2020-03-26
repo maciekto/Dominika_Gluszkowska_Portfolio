@@ -3,7 +3,7 @@
 }
 @media (min-width: 768px){
     .ProjectsDesktop{
-        border-radius: 10px;
+        //border-radius: 10px;
         display: block;
         cursor: pointer;
         z-index: 60;
@@ -12,7 +12,7 @@
         height: 110px;
         background-color: rgba($color: #ffffff, $alpha: 0.84);
         position: absolute;
-        bottom: 0px;
+        bottom: -30px;
         box-shadow: 0px 0px 6px black;
         animation: neon 2s alternate infinite;
 
